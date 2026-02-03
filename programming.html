@@ -39,26 +39,137 @@
                 </div>
                 <div class="card-details">
                     <div class="details-content">
+
+                        <!-- Overview -->
                         <div class="details-section">
-                            <h3 class="section-title">Overview</h3>
+                            <h3 class="section-title">What is Luden Engine?</h3>
                             <p class="details-text">
-                                Luden Engine is a lightweight 2D game engine built from scratch in C++.
-                                It features a fully custom Entity-Component System (ECS), an ImGui powered editor inspired by modern engines like Unity and Unreal.
-                                The engine focuses on flexibility, performance, and data-oriented design.
+                                Luden Engine is a lightweight 2D game engine I built from scratch in C++. It features a custom Entity-Component System (ECS), an ImGui-powered editor inspired by Unity and Unreal, Box2D 3.0 physics integration, and a hot-reload capable native scripting system.
+                            </p>
+                            <p class="details-text">
+                                This project holds a special place in my heart. When I started, I was just a guy with little C++ experience who had no idea how game engines actually worked. I didn't know how to design systems, manage memory efficiently or create editor tools. Building Luden taught me all of that and more.
                             </p>
                         </div>
-                        
+
+                        <!-- ECS Architecture -->
                         <div class="details-section">
                             <h3 class="section-title">Entity-Component System (ECS)</h3>
+                            <div class="image-gallery">
+                                <img src="images/LudenEngineECSDetail.png" alt="Luden ECS" class="gallery-image">
+                                <img src="images/ECS_Simple_Layout..png" alt="ECS Simple Layout" class="gallery-image">
+                            </div>
                             <p class="details-text">
-                                At the core of Luden Engine is a custom ECS system designed for both speed and flexibility.
-                                Entities act as lightweight IDs, while components are stored in pools managed through templates and tuples.
+                                At the core of Luden is a custom ECS designed for speed and flexibility. ECS uses composition. An entity is just a lightweight ID, and you attach components to define its behavior.
+                            </p>
+                            <p class="details-text">
+                                For example you don't have to design your objects/entities in compile time. Compile time hierarchy is not a good idea for a realtime application like a game engine. You simply compose:
                             </p>
                             <ul class="details-list">
-                                <li>Fast iteration over large numbers of entities</li>
-                                <li>Cache-friendly data access</li>
-                                <li>Clean separation of logic and data</li>
+                                <li><strong>Player:</strong> Transform + Sprite + RigidBody + Health + Input</li>
+                                <li><strong>Enemy:</strong> Transform + Sprite + RigidBody + Health + AI</li>
+                                <li><strong>Flying Enemy:</strong> Transform + Sprite + Health + AI + Flying (no RigidBody!)</li>
                             </ul>
+                            <p class="details-text">
+                                The key thing is memory layout. In OOP, each entity is scattered across memory, causing cache misses which is too expensive. In ECS all components of the same type are stored contiguously. When iterating over thousands of entities, this cache-friendly layout makes a huge difference.
+                            </p>
+                        </div>
+
+                        <!-- Architecture -->
+                        <div class="details-section">
+                            <h3 class="section-title">Engine Architecture</h3>
+                            <div class="image-gallery">
+                                <img src="images/LudenEngineArchitecture - 1.png" alt="Luden ECS" class="gallery-image">
+                            </div>
+                            <p class="details-text">
+                                Luden follows a three-layer modular architecture:
+                            </p>
+                            <ul class="details-list">
+                                <li><strong>Engine Core (Engine.dll):</strong> ECS, physics, rendering, resource management, the shared library that everything depends on</li>
+                                <li><strong>Editor Layer (Editor.exe):</strong> ImGui-based visual editor with scene hierarchy, inspector, viewport, resource browser</li>
+                                <li><strong>Game Module (GameModule.dll):</strong> Your game scripts compiled separately and hot-reloadable</li>
+                            </ul>
+                            <p class="details-text">
+                                Dependencies flow one way: Editor and GameModule depend on Engine, but Engine remains independent. This means you can reuse the engine across different projects.
+                            </p>
+                        </div>
+
+                        <!-- Editor -->
+                        <div class="details-section">
+                            <h3 class="section-title">Editor Features</h3>
+                            <div class="image-gallery">
+                                <img src="gifs/SceneEditorTab.gif" alt="Scene Editor" class="gallery-image">
+                                <img src="images/SpriteEditorTab.png" alt="Sprite Editor" class="gallery-image">
+                                <img src="gifs/AnimationEditorTab.gif" alt="Animation Editor" class="gallery-image">
+                                <img src="images/PrefabEditorTab.png" alt="Prefab Editor" class="gallery-image">
+                            </div>
+                            <p class="details-text">
+                                The editor includes multiple specialized tabs:
+                            </p>
+                            <ul class="details-list">
+                                <li><strong>Scene Editor:</strong> Viewport with gizmos (move/rotate/scale), play/edit toggle, physics debug visualization</li>
+                                <li><strong>Sprite Editor:</strong> Define sprites from texture atlases with grid helpers</li>
+                                <li><strong>Animation Editor:</strong> Frame-by-frame animation with timeline, preview, and loop settings</li>
+                                <li><strong>Prefab Editor:</strong> Create reusable entity templates that auto-update all instances</li>
+                            </ul>
+                        </div>
+
+                        <!-- Hot Reload -->
+                        <div class="details-section">
+                            <h3 class="section-title">Hot-Reload System</h3>
+                            <p class="details-text">
+                                One feature I'm particularly proud of is hot-reload. When you modify your game scripts and recompile, the editor detects the DLL change and:
+                            </p>
+                            <ul class="details-list">
+                                <li>Destroys all script instances</li>
+                                <li>Unloads the old DLL</li>
+                                <li>Loads the new DLL</li>
+                                <li>Eegisters scripts and recreates instances again</li>
+                            </ul>
+                        </div>
+
+                        <!-- Other Systems -->
+                        <div class="details-section">
+                            <h3 class="section-title">Other Systems</h3>
+                            <ul class="details-list">
+                                <li><strong>Physics:</strong> Box2D 3.0 integration with static/dynamic/kinematic bodies, box and circle colliders</li>
+                                <li><strong>Animation:</strong> Frame-based sprite animation with configurable durations and loop settings</li>
+                                <li><strong>Input:</strong> Context-based input system with action abstraction (inspired by Unreal's Enhanced Input)</li>
+                                <li><strong>Prefabs:</strong> Entity templates with nested prefab support - change the prefab, all instances update</li>
+                                <li><strong>Serialization:</strong> JSON-based scene format for version control friendliness</li>
+                            </ul>
+                        </div>
+
+                        <!-- Special Thanks -->
+                        <div class="details-section">
+                            <h3 class="section-title">Special Thanks</h3>
+
+                            <p class="details-text">
+                                This engine wouldn't exist without the incredible resources and people who taught me along the way.
+                            </p>
+
+                            <p class="details-text" style="margin-top: 15px;">
+                                <strong>Learning Resources:</strong><br>
+                                Jason Gregory's <em>Game Engine Architecture</em> gave me the foundational understanding of how engines work.
+                                Dave Churchill's COMP4300 course at Memorial University provided the ECS foundation that Luden is built on.
+                                The Cherno's Hazel Engine series showed me how to structure a modern C++ engine with proper editor tooling.
+                                And
+                                <a href="https://hanion.dev/post/enik-engine/" target="_blank" style="color: #fff;">
+                                    Hanion's Enik Engine
+                                </a>
+                                was a great reference for editor application.
+                            </p>
+
+                            <p class="details-text">
+                                <strong>IO Interactive:</strong><br>
+                                Working at IO Interactive changed me as a programmer. Huge respect to Berkay Dursun, Anıl Can Turan,
+                                Furkan Kılıçaslan, and Berkay Şahin. All of them are brilliant programmers who insprired me along the way. They made me a better programmer.
+                            </p>
+
+                            <p class="details-text">
+                                <strong>Game Jam Team:</strong><br>
+                                Special thanks to İclal Baydur and Ataberk Akın who actually used my buggy engine in a BugZone Global Game Jam 2026.
+                                They had to deal with missing features and unclear documentation. Yet we still shipped a game in the jam.
+                            </p>
                         </div>
 
                         <div class="project-links">
@@ -216,6 +327,36 @@
         </footer>
     </div>
 
+    <style>
+        /* Collapsible content */
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .collapsible-content.expanded {
+            max-height: 1000px;
+        }
+        
+        .read-more-btn {
+            background: none;
+            border: 1px solid #333;
+            color: #666;
+            padding: 8px 16px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: all 0.2s ease;
+        }
+        
+        .read-more-btn:hover {
+            border-color: #fff;
+            color: #fff;
+        }
+    </style>
+
     <script>
         function toggleCard(card) {
             document.querySelectorAll('.project-card').forEach(c => {
@@ -228,6 +369,7 @@
                 }, 100);
             }
         }
+    
     </script>
 </body>
 </html>

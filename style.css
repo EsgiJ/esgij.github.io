@@ -269,7 +269,7 @@ body {
 }
 
 .project-card.expanded .card-details {
-    max-height: 3000px;
+    max-height: 8000px;
 }
 
 .details-content {
@@ -381,7 +381,7 @@ body {
 .gallery-image {
     width: 100%;
     aspect-ratio: 16/10;
-    object-fit: cover;
+    object-fit: contain;
     filter: grayscale(50%);
     transition: filter 0.3s ease;
     cursor: pointer;
