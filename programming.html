@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming - Oğuzhan Esgiyusufoglu</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Page Header -->
+        <header class="page-header">
+            <a href="index.html" class="back-link">← Back</a>
+            <h1 class="page-title">Programming</h1>
+            <p class="page-subtitle">Game Engine Development / C++ / Graphics</p>
+        </header>
+
+        <!-- Luden Engine -->
+        <section class="content-section">
+            <div class="project-card">
+                <h2 class="project-title">Luden Engine</h2>
+                <div class="project-links">
+                    <a href="https://github.com/EsgiJ/Luden" class="project-link" target="_blank">GitHub</a>
+                </div>
+                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2025/10/ludenengine-1.png" alt="Luden Engine" class="project-image">
+                <p class="content-text">
+                    Luden Engine is a lightweight 2D game engine built from scratch in C++.
+                    It features a fully custom Entity-Component System (ECS), an ImGui powered editor inspired by modern engines like Unity and Unreal.
+                    The engine focuses on flexibility, performance, and data-oriented design.
+                </p>
+
+                <h3 class="section-subtitle">Entity-Component System (ECS)</h3>
+                <p class="content-text">
+                    At the core of Luden Engine is a custom ECS system designed for both speed and flexibility.
+                    Entities act as lightweight IDs, while components are stored in pools managed through templates and tuples.
+                </p>
+                <ul class="content-list">
+                    <li>Fast iteration over large numbers of entities</li>
+                    <li>Cache-friendly data access</li>
+                    <li>Clean separation of logic and data</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- Coop TPS Game -->
+        <section class="content-section">
+            <div class="project-card">
+                <h2 class="project-title">Coop TPS Base Defense Game</h2>
+                <div class="project-links">
+                    <a href="https://drive.google.com/drive/folders/1emNEYcP2R5cVQpkjDr1PoTGTmASsKj3q?usp=sharing" class="project-link" target="_blank">Play Now!</a>
+                </div>
+                <iframe class="project-video" src="https://www.youtube.com/embed/ILB9HL2DBCo" frameborder="0" allowfullscreen></iframe>
+                <p class="content-text">
+                    The inspiration for developing this game came after playing Lethal Company. Its engaging co-op gameplay and the thrill of working together with friends to survive sparked a desire to create my own cooperative experience.
+                </p>
+
+                <h3 class="section-subtitle">Gameplay Mechanics</h3>
+                <p class="content-text">
+                    Players collaborate to defend designated entry points of the base against waves of zombies. Each player shares the same abilities, focusing on shooting and resource management. Communication and teamwork are vital for surviving increasingly challenging assaults.
+                </p>
+
+                <h3 class="section-subtitle">Networking</h3>
+                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/09/client-server-2.png" alt="Networking" class="project-image">
+                <p class="content-text">
+                    The game employs a server-client architecture where one player hosts the game as the server while others connect as clients. This setup enables replication and synchronization of game states across all players.
+                </p>
+
+                <h3 class="section-subtitle">Motion Matching</h3>
+                <iframe class="project-video" src="https://www.youtube.com/embed/VC_wIUp0FZc" frameborder="0" allowfullscreen></iframe>
+                <p class="content-text">
+                    Motion matching technology is employed to create smooth and realistic character animations. I used chooser tables for motion matching, which significantly simplified the debugging process.
+                </p>
+
+                <h3 class="section-subtitle">AI Development</h3>
+                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/09/coop-tps-base-defense-behavior-tree.png" alt="Behavior Tree" class="project-image">
+                <p class="content-text">
+                    The zombie AI is created using Behavior Trees, which allow for complex decision-making processes. Zombies spawn in waves and prioritize attacking doors first. If a door is broken, they will infiltrate the base to attack players directly.
+                </p>
+
+                <h3 class="section-subtitle">Weapons</h3>
+                <iframe class="project-video" src="https://www.youtube.com/embed/46nUFlybWjM" frameborder="0" allowfullscreen></iframe>
+                <p class="content-text">
+                    The game features four different weapons: a pistol, shotgun, rifle, and grenade launcher. Each weapon has distinct ammo counts, damage values, area effects, and bullet spread rates.
+                </p>
+            </div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- RayTracer -->
+        <section class="content-section">
+            <div class="project-card">
+                <h2 class="project-title">RayTracer</h2>
+                <div class="project-links">
+                    <a href="https://github.com/EsgiJ/RayTracing" class="project-link" target="_blank">GitHub</a>
+                </div>
+                <iframe class="project-video" src="https://www.youtube.com/embed/J4uvtS17kBY" frameborder="0" allowfullscreen></iframe>
+                <p class="content-text">
+                    I'm currently working on a raytracer project following the "RayTracing In One Weekend" series. I've completed the first book and plan to implement additional features:
+                </p>
+                <ul class="content-list">
+                    <li>Texture mapping</li>
+                    <li>Volumes (fog, smoke, etc.)</li>
+                    <li>Motion blur</li>
+                    <li>Lights</li>
+                </ul>
+                <p class="content-text">
+                    Once finished, I plan to transition the raytracer from CPU-based rendering to GPU rendering using Vulkan, which will significantly increase performance.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="social-links">
+                <a href="https://github.com/EsgiJ">GitHub</a>
+                <a href="https://www.artstation.com/oguzhan_esgiyusufo">ArtStation</a>
+                <a href="https://www.instagram.com/esgijj/">Instagram</a>
+            </div>
+            <div class="status">Available for work</div>
+        </footer>
+    </div>
+</body>
+</html>
