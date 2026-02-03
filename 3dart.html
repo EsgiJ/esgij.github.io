@@ -16,105 +16,226 @@
             <p class="page-subtitle">Character Modeling / Texturing / Blender</p>
         </header>
 
-        <!-- Guts Character -->
-        <section class="content-section">
-            <div class="project-card">
-                <h2 class="project-title">Guts Character Model from Berserk</h2>
-                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/07/finalrender1.png" alt="Guts Render 1" class="project-image">
-                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/07/finalrender7.png" alt="Guts Render 2" class="project-image">
-                
-                <h3 class="section-subtitle">Project Overview</h3>
-                <p class="content-text">
-                    This project showcases a personal project where I created a 3D model of Guts, the iconic character from the manga series Berserk. This was an ambitious challenge, as I had never created a realistic 3D character model before. My goal was to learn and implement the entire 3D character art pipeline, from initial sculpting to final rendering.
-                </p>
-
-                <h3 class="section-subtitle">Process</h3>
-                <ul class="content-list">
-                    <li><strong>Base Mesh Creation:</strong> Started with a basic human mesh to establish proportions and overall shape.</li>
-                    <li><strong>Sculpting:</strong> Using Blender's sculpting tools, meticulously sculpted the body and facial features, paying close attention to muscle structure and anatomical accuracy.</li>
-                    <li><strong>Armor and Weapons:</strong> Each piece of armor and Guts' iconic Dragonslayer sword was separately modeled using hard surface modeling techniques.</li>
-                    <li><strong>Retopology:</strong> Created a clean, low-poly retopology suitable for animation.</li>
-                    <li><strong>Rigging & Weight Painting:</strong> Rigged the character ensuring a functional skeleton that allows for a full range of motion.</li>
-                    <li><strong>Texturing:</strong> In Substance Painter, created realistic textures for the skin, armor, and weapon.</li>
-                </ul>
-
-                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/07/dragonslayer.png" alt="Dragonslayer" class="project-image">
-                
-                <h3 class="section-subtitle">Tools Used</h3>
-                <ul class="content-list">
-                    <li>Blender - Modeling, Sculpting, Rigging, Rendering</li>
-                    <li>Adobe Substance 3D Painter - Texturing</li>
-                </ul>
-
-                <h3 class="section-subtitle">Project Duration</h3>
-                <p class="content-text">
-                    The entire project took approximately 3 months of full-time dedication, involving extensive trial and error, learning new software, and overcoming numerous challenges.
-                </p>
-            </div>
-        </section>
-
-        <hr class="separator">
-
-        <!-- Dwarf Character -->
-        <section class="content-section">
-            <div class="project-card">
-                <h2 class="project-title">Dwarf Character for Fantasy Game</h2>
-                <iframe class="project-video" src="https://www.youtube.com/embed/jOtejwuMcxg" frameborder="0" allowfullscreen></iframe>
-                
-                <h3 class="section-subtitle">Project Overview</h3>
-                <p class="content-text">
-                    I was asked to create a game-ready Dwarf character for a university club's fantasy-themed game. Given a detailed concept, I completed the model in just two weeks, leveraging my experience from the previous Guts project.
-                </p>
-
-                <h3 class="section-subtitle">Process</h3>
-                <ul class="content-list">
-                    <li><strong>Concept & Sculpting:</strong> Quickly blocked out the character and sculpted key features like the beard and armor details.</li>
-                    <li><strong>Hair Creation:</strong> Used hair cards for the beard and hair, ensuring the model remained optimized for real-time use.</li>
-                    <li><strong>Rigging & Weight Painting:</strong> Rigged the character for smooth animations, paying special attention to areas like the beard and armor.</li>
-                    <li><strong>Texturing:</strong> Created detailed textures in Substance Painter, focusing on realistic materials and wear.</li>
-                </ul>
-
-                <p class="content-text">
-                    The character was completed efficiently, meeting game-ready standards. This project enhanced my skills in creating optimized models for game environments.
-                </p>
-            </div>
-        </section>
-
-        <hr class="separator">
-
-        <!-- Jolly Jumper -->
-        <section class="content-section">
-            <div class="project-card">
-                <h2 class="project-title">Project: "Jolly Jumper" - Global Game Jam 2024</h2>
-                <div class="project-links">
-                    <a href="https://globalgamejam.org/games/2024/jolly-jumper-7" class="project-link" target="_blank">Game Jam Page</a>
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+            
+            <!-- Guts Character -->
+            <div class="project-card" onclick="toggleCard(this)">
+                <div class="card-preview">
+                    <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/07/finalrender1.png" alt="Guts" class="card-thumbnail">
+                    <span class="expand-icon">+</span>
+                    <div class="card-overlay">
+                        <div class="card-number">01 / PROJECT</div>
+                        <h2 class="card-title">Guts - Berserk</h2>
+                        <div class="card-tags">
+                            <span class="tag">Blender</span>
+                            <span class="tag">Substance Painter</span>
+                            <span class="tag">Character</span>
+                        </div>
+                    </div>
                 </div>
-                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/09/filmler-ve-tv-28.01.2024-16_53_34.png" alt="Jolly Jumper" class="project-image">
-                <p class="content-text">
-                    During the Global Game Jam 2024, I had the opportunity to work as the 3D artist for our game "Jolly Jumper." The theme was "Make Me Laugh," and we decided to create a first-person game where players attempt to make people laugh by punching them.
-                </p>
-                <p class="content-text">
-                    This project was an invaluable experience in teamwork and rapid development. Collaborating with my team under the time constraints of a game jam allowed me to refine my skills in 3D modeling and animation, as well as learn the dynamics of effective collaboration in a high-pressure environment.
-                </p>
-            </div>
-        </section>
+                <div class="card-details">
+                    <div class="details-content">
+                        <div class="details-section">
+                            <h3 class="section-title">Project Overview</h3>
+                            <p class="details-text">
+                                This project showcases a personal project where I created a 3D model of Guts, the iconic character from the manga series Berserk. This was an ambitious challenge, as I had never created a realistic 3D character model before. My goal was to learn and implement the entire 3D character art pipeline, from initial sculpting to final rendering.
+                            </p>
+                        </div>
 
-        <hr class="separator">
+                        <div class="details-section">
+                            <h3 class="section-title">Gallery</h3>
+                            <div class="image-gallery">
+                                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/07/finalrender1.png" alt="Guts Render 1" class="gallery-image">
+                                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/07/finalrender7.png" alt="Guts Render 2" class="gallery-image">
+                                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/07/finalrender3.png" alt="Guts Render 3" class="gallery-image">
+                                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/07/dragonslayer.png" alt="Dragonslayer" class="gallery-image">
+                            </div>
+                        </div>
 
-        <!-- DOGDOK TPS -->
-        <section class="content-section">
-            <div class="project-card">
-                <h2 class="project-title">YTÜ DOGDOK - TPS Base Defense</h2>
-                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/09/image.png" alt="DOGDOK Game" class="project-image">
-                <iframe class="project-video" src="https://www.youtube.com/embed/ZoIaXxH2J-8" frameborder="0" allowfullscreen></iframe>
-                <p class="content-text">
-                    During the 2023-2024 academic year, I served as the Sponsorship Coordinator and a board member of the Digital Game Development and Digital Gaming Club at Yıldız Technical University. Currently, in the 2024-2025 term, I am taking on the role of Game Development Coordinator.
-                </p>
-                <p class="content-text">
-                    Our game development team decided to create a game in three months to showcase our club's activities. For this project, I modeled the main character, a turret, and the base generator. Additionally, I was responsible for texturing numerous models within the game.
-                </p>
+                        <div class="details-section">
+                            <h3 class="section-title">Process</h3>
+                            <ul class="details-list">
+                                <li><strong>Base Mesh Creation:</strong> Started with a basic human mesh to establish proportions and overall shape</li>
+                                <li><strong>Sculpting:</strong> Meticulously sculpted the body and facial features using Blender's sculpting tools, paying close attention to muscle structure and anatomical accuracy</li>
+                                <li><strong>Armor and Weapons:</strong> Each piece of armor and Guts' iconic Dragonslayer sword was separately modeled using hard surface modeling techniques</li>
+                                <li><strong>Retopology:</strong> Created a clean, low-poly retopology suitable for animation</li>
+                                <li><strong>Rigging & Weight Painting:</strong> Rigged the character ensuring a functional skeleton with full range of motion</li>
+                                <li><strong>Texturing:</strong> Created realistic textures in Substance Painter for skin, armor, and weapon</li>
+                                <li><strong>Rendering:</strong> Final renders done in Blender using Cycles engine</li>
+                            </ul>
+                        </div>
+
+                        <div class="details-section">
+                            <h3 class="section-title">Tools Used</h3>
+                            <ul class="details-list">
+                                <li>Blender - Modeling, Sculpting, Rigging, Rendering</li>
+                                <li>Adobe Substance 3D Painter - Texturing</li>
+                            </ul>
+                        </div>
+
+                        <div class="details-section">
+                            <h3 class="section-title">Project Duration</h3>
+                            <p class="details-text">
+                                The entire project took approximately 3 months of full-time dedication, involving extensive trial and error, learning new software, and overcoming numerous challenges. The end result was not just a 3D model but a significant milestone in my journey as a 3D artist.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+
+            <!-- Dwarf Character -->
+            <div class="project-card" onclick="toggleCard(this)">
+                <div class="card-preview">
+                    <img src="https://i.ytimg.com/vi/jOtejwuMcxg/maxresdefault.jpg" alt="Dwarf" class="card-thumbnail">
+                    <span class="expand-icon">+</span>
+                    <div class="card-overlay">
+                        <div class="card-number">02 / PROJECT</div>
+                        <h2 class="card-title">Dwarf Character</h2>
+                        <div class="card-tags">
+                            <span class="tag">Blender</span>
+                            <span class="tag">Game-Ready</span>
+                            <span class="tag">Fantasy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div class="details-content">
+                        <div class="details-section">
+                            <h3 class="section-title">Project Overview</h3>
+                            <p class="details-text">
+                                I was asked to create a game-ready Dwarf character for a university club's fantasy-themed game. Given a detailed concept, I completed the model in just two weeks, leveraging my experience from the previous Guts project.
+                            </p>
+                        </div>
+
+                        <div class="details-section">
+                            <h3 class="section-title">Turntable</h3>
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/jOtejwuMcxg" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="details-section">
+                            <h3 class="section-title">Process</h3>
+                            <ul class="details-list">
+                                <li><strong>Concept & Sculpting:</strong> Quickly blocked out the character and sculpted key features like the beard and armor details</li>
+                                <li><strong>Hair Creation:</strong> Used hair cards for the beard and hair, ensuring the model remained optimized for real-time use</li>
+                                <li><strong>Rigging & Weight Painting:</strong> Rigged the character for smooth animations, paying special attention to the beard and armor</li>
+                                <li><strong>Texturing:</strong> Created detailed textures in Substance Painter, focusing on realistic materials and wear</li>
+                            </ul>
+                        </div>
+
+                        <div class="details-section">
+                            <h3 class="section-title">Outcome</h3>
+                            <p class="details-text">
+                                The character was completed efficiently, meeting game-ready standards. This project enhanced my skills in creating optimized models for game environments, particularly in hair card usage and realistic texturing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jolly Jumper -->
+            <div class="project-card" onclick="toggleCard(this)">
+                <div class="card-preview">
+                    <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/09/filmler-ve-tv-28.01.2024-16_53_34.png" alt="Jolly Jumper" class="card-thumbnail">
+                    <span class="expand-icon">+</span>
+                    <div class="card-overlay">
+                        <div class="card-number">03 / PROJECT</div>
+                        <h2 class="card-title">Jolly Jumper - GGJ 2024</h2>
+                        <div class="card-tags">
+                            <span class="tag">Game Jam</span>
+                            <span class="tag">3D Artist</span>
+                            <span class="tag">48 Hours</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div class="details-content">
+                        <div class="details-section">
+                            <h3 class="section-title">Global Game Jam 2024</h3>
+                            <p class="details-text">
+                                During the Global Game Jam 2024, I had the opportunity to work as the 3D artist for our game "Jolly Jumper." The theme was "Make Me Laugh," and we decided to create a first-person game where players attempt to make people laugh by punching them.
+                            </p>
+                        </div>
+
+                        <div class="details-section">
+                            <h3 class="section-title">Screenshots</h3>
+                            <div class="image-gallery">
+                                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/09/filmler-ve-tv-28.01.2024-16_53_34.png" alt="Jolly Jumper 1" class="gallery-image">
+                                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/09/filmler-ve-tv-28.01.2024-16_51_39.png" alt="Jolly Jumper 2" class="gallery-image">
+                                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/09/filmler-ve-tv-28.01.2024-16_50_56.png" alt="Jolly Jumper 3" class="gallery-image">
+                                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/09/filmler-ve-tv-28.01.2024-16_48_44.png" alt="Jolly Jumper 4" class="gallery-image">
+                            </div>
+                        </div>
+
+                        <div class="details-section">
+                            <h3 class="section-title">Experience</h3>
+                            <p class="details-text">
+                                While I can't say that I am particularly proud of the game concept itself, this project was an invaluable experience in teamwork and rapid development. Collaborating with my team under the time constraints of a game jam allowed me to refine my skills in 3D modeling and animation, as well as learn the dynamics of effective collaboration in a high-pressure environment.
+                            </p>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://globalgamejam.org/games/2024/jolly-jumper-7" class="project-link primary" target="_blank">Game Jam Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DOGDOK TPS -->
+            <div class="project-card" onclick="toggleCard(this)">
+                <div class="card-preview">
+                    <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/09/image.png" alt="DOGDOK TPS" class="card-thumbnail">
+                    <span class="expand-icon">+</span>
+                    <div class="card-overlay">
+                        <div class="card-number">04 / PROJECT</div>
+                        <h2 class="card-title">YTÜ DOGDOK - TPS Game</h2>
+                        <div class="card-tags">
+                            <span class="tag">Club Project</span>
+                            <span class="tag">Modeling</span>
+                            <span class="tag">Texturing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div class="details-content">
+                        <div class="details-section">
+                            <h3 class="section-title">Club Project</h3>
+                            <p class="details-text">
+                                During the 2023-2024 academic year, I served as the Sponsorship Coordinator and a board member of the Digital Game Development and Digital Gaming Club at Yıldız Technical University. Currently, in the 2024-2025 term, I am taking on the role of Game Development Coordinator.
+                            </p>
+                        </div>
+
+                        <div class="details-section">
+                            <h3 class="section-title">Videos</h3>
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/ZoIaXxH2J-8" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="video-container" style="margin-top: 15px;">
+                                <iframe src="https://www.youtube.com/embed/MBm7Yu0QAn8" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="details-section">
+                            <h3 class="section-title">Screenshots</h3>
+                            <div class="image-gallery">
+                                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/09/image.png" alt="DOGDOK 1" class="gallery-image">
+                                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/09/image1.png" alt="DOGDOK 2" class="gallery-image">
+                            </div>
+                        </div>
+
+                        <div class="details-section">
+                            <h3 class="section-title">My Contribution</h3>
+                            <p class="details-text">
+                                In the 2023-2024 term, our game development team decided to create a game in three months to showcase our club's activities and attract potential members during the university's opening week. For this project, I modeled the main character, a turret, and the base generator. Additionally, I was responsible for texturing numerous models within the game.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         <!-- Footer -->
         <footer class="footer">
@@ -126,5 +247,19 @@
             <div class="status">Available for work</div>
         </footer>
     </div>
+
+    <script>
+        function toggleCard(card) {
+            document.querySelectorAll('.project-card').forEach(c => {
+                if (c !== card) c.classList.remove('expanded');
+            });
+            card.classList.toggle('expanded');
+            if (card.classList.contains('expanded')) {
+                setTimeout(() => {
+                    card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        }
+    </script>
 </body>
 </html>

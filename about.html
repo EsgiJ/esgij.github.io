@@ -17,58 +17,168 @@
         </header>
 
         <!-- About Content -->
-        <section class="content-section">
-            <div class="two-column">
-                <div>
-                    <p class="content-text">
-                        I am currently studying Computer Engineering at Yıldız Technical University, with a strong focus on coding and software development. I also had the opportunity to study at Czech Technical University for one semester through the Erasmus program, which allowed me to explore 10 different countries and broaden my cultural perspective.
-                    </p>
-                    <p class="content-text">
-                        My passion for creativity and technology extends beyond programming. During high school, I was actively involved in graffiti and illustration, which later evolved into an interest in 3D character art during my university years.
-                    </p>
-                    <p class="content-text">
-                        Additionally, under the guidance of artist Volkan Aslan, I participated in a project for the 16th Istanbul Biennial, titled "The Seventh Continent," at İKSV Alt Kat: Learning and Interaction Space. Along with a group of students, we created artworks related to the biennial's conceptual framework. Our works were later exhibited on the sailing vessel "Blue Panda," which toured various locations in Istanbul, in collaboration with the World Wide Fund for Nature (WWF).
-                    </p>
-                    <p class="content-text">
-                        Throughout high school, I attended several symposiums, further enriching my artistic and intellectual background. Currently, I am developing my own game using Unreal Engine and C++, and I am working on a ray tracer, which combines my interests in graphics programming and game development.
-                    </p>
-                    <p class="content-text">
-                        In addition to my technical and artistic pursuits, I enjoy exploring new cuisines, reading books, and watching films, all of which inspire my creative endeavors.
-                    </p>
-                </div>
-                <div>
-                    <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/07/img_20240623_212534.jpg" alt="Oğuzhan" class="column-image">
-                </div>
+        <section class="two-column" style="margin-bottom: 60px;">
+            <div>
+                <p class="content-text">
+                    I am currently studying Computer Engineering at Yıldız Technical University, with a strong focus on coding and software development. I also had the opportunity to study at Czech Technical University for one semester through the Erasmus program, which allowed me to explore 10 different countries and broaden my cultural perspective.
+                </p>
+                <p class="content-text">
+                    My passion for creativity and technology extends beyond programming. During high school, I was actively involved in graffiti and illustration, which later evolved into an interest in 3D character art during my university years.
+                </p>
+                <p class="content-text">
+                    Additionally, under the guidance of artist Volkan Aslan, I participated in a project for the 16th Istanbul Biennial, titled "The Seventh Continent," at İKSV Alt Kat: Learning and Interaction Space. Along with a group of students, we created artworks related to the biennial's conceptual framework. Our works were later exhibited on the sailing vessel "Blue Panda," which toured various locations in Istanbul, in collaboration with the World Wide Fund for Nature (WWF).
+                </p>
+                <p class="content-text">
+                    Throughout high school, I attended several symposiums, further enriching my artistic and intellectual background. Currently, I am developing my own game engine called Luden Engine using C++, and I am working on a ray tracer, which combines my interests in graphics programming and game development.
+                </p>
+                <p class="content-text">
+                    In addition to my technical and artistic pursuits, I enjoy exploring new cuisines, reading books, and watching films, all of which inspire my creative endeavors.
+                </p>
+            </div>
+            <div>
+                <img src="https://oguzhanesgiyusufo.wordpress.com/wp-content/uploads/2024/07/img_20240623_212534.jpg" alt="Oğuzhan" class="column-image">
             </div>
         </section>
 
         <hr class="separator">
 
-        <!-- Other Section -->
-        <section class="content-section">
-            <h2 class="section-title">YTÜ DOGDOK Interviews</h2>
-            <p class="content-text">
+        <!-- Interviews Section -->
+        <section>
+            <h2 style="font-size: 1.4rem; font-weight: 600; margin-bottom: 15px;">YTÜ DOGDOK Interviews</h2>
+            <p class="content-text" style="margin-bottom: 30px;">
                 During my time on the board in the 2023-2024 term, we organized an event called "Rolleri Tanıyalım" which allowed me to interview successful figures in the industry. As a young and inexperienced moderator, I believe that even though I may have been unsuccessful at times, this experience contributed greatly to my growth.
             </p>
 
-            <div class="project-card" style="margin-top: 30px;">
-                <h3 class="section-subtitle">Buğra Erke - Senior Character Artist, Housemarque</h3>
-                <iframe class="project-video" src="https://www.youtube.com/embed/uDg1FfOi1xg" frameborder="0" allowfullscreen></iframe>
-            </div>
+            <div class="projects-grid">
+                
+                <!-- Buğra Erke -->
+                <div class="project-card" onclick="toggleCard(this)">
+                    <div class="card-preview">
+                        <img src="https://i.ytimg.com/vi/uDg1FfOi1xg/maxresdefault.jpg" alt="Buğra Erke" class="card-thumbnail">
+                        <span class="expand-icon">+</span>
+                        <div class="card-overlay">
+                            <div class="card-number">INTERVIEW</div>
+                            <h2 class="card-title">Buğra Erke</h2>
+                            <div class="card-tags">
+                                <span class="tag">Housemarque</span>
+                                <span class="tag">Character Artist</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <div class="details-content">
+                            <div class="details-section">
+                                <h3 class="section-title">Senior Character Artist at Housemarque</h3>
+                                <p class="details-text">
+                                    Interview with Buğra Erke about his journey in the game industry and his work at Housemarque on titles like Returnal.
+                                </p>
+                            </div>
+                            <div class="details-section">
+                                <h3 class="section-title">Watch</h3>
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/uDg1FfOi1xg" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="project-card">
-                <h3 class="section-subtitle">Göksu Uğur - AI Lead, God of War</h3>
-                <iframe class="project-video" src="https://www.youtube.com/embed/x_AwackD6Ek" frameborder="0" allowfullscreen></iframe>
-            </div>
+                <!-- Göksu Uğur -->
+                <div class="project-card" onclick="toggleCard(this)">
+                    <div class="card-preview">
+                        <img src="https://i.ytimg.com/vi/x_AwackD6Ek/maxresdefault.jpg" alt="Göksu Uğur" class="card-thumbnail">
+                        <span class="expand-icon">+</span>
+                        <div class="card-overlay">
+                            <div class="card-number">INTERVIEW</div>
+                            <h2 class="card-title">Göksu Uğur</h2>
+                            <div class="card-tags">
+                                <span class="tag">Santa Monica Studio</span>
+                                <span class="tag">AI Lead</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <div class="details-content">
+                            <div class="details-section">
+                                <h3 class="section-title">AI Lead - God of War</h3>
+                                <p class="details-text">
+                                    Interview with Göksu Uğur about AI development in AAA games and his experience working on God of War.
+                                </p>
+                            </div>
+                            <div class="details-section">
+                                <h3 class="section-title">Watch</h3>
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/x_AwackD6Ek" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="project-card">
-                <h3 class="section-subtitle">Emre Buğday - Technical Game Designer, Wargaming</h3>
-                <iframe class="project-video" src="https://www.youtube.com/embed/YcPFzrX8JYk" frameborder="0" allowfullscreen></iframe>
-            </div>
+                <!-- Emre Buğday -->
+                <div class="project-card" onclick="toggleCard(this)">
+                    <div class="card-preview">
+                        <img src="https://i.ytimg.com/vi/YcPFzrX8JYk/maxresdefault.jpg" alt="Emre Buğday" class="card-thumbnail">
+                        <span class="expand-icon">+</span>
+                        <div class="card-overlay">
+                            <div class="card-number">INTERVIEW</div>
+                            <h2 class="card-title">Emre Buğday</h2>
+                            <div class="card-tags">
+                                <span class="tag">Wargaming</span>
+                                <span class="tag">Tech Game Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <div class="details-content">
+                            <div class="details-section">
+                                <h3 class="section-title">Technical Game Designer at Wargaming</h3>
+                                <p class="details-text">
+                                    Interview with Emre Buğday about technical game design and his career at Wargaming.
+                                </p>
+                            </div>
+                            <div class="details-section">
+                                <h3 class="section-title">Watch</h3>
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/YcPFzrX8JYk" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="project-card">
-                <h3 class="section-subtitle">Berke Boz - Software Engineer, EA Sports</h3>
-                <iframe class="project-video" src="https://www.youtube.com/embed/UCfuypTYutE" frameborder="0" allowfullscreen></iframe>
+                <!-- Berke Boz -->
+                <div class="project-card" onclick="toggleCard(this)">
+                    <div class="card-preview">
+                        <img src="https://i.ytimg.com/vi/UCfuypTYutE/maxresdefault.jpg" alt="Berke Boz" class="card-thumbnail">
+                        <span class="expand-icon">+</span>
+                        <div class="card-overlay">
+                            <div class="card-number">INTERVIEW</div>
+                            <h2 class="card-title">Berke Boz</h2>
+                            <div class="card-tags">
+                                <span class="tag">EA Sports</span>
+                                <span class="tag">Software Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <div class="details-content">
+                            <div class="details-section">
+                                <h3 class="section-title">Software Engineer at EA Sports</h3>
+                                <p class="details-text">
+                                    Interview with Berke Boz about software engineering at EA Sports and working on major sports titles.
+                                </p>
+                            </div>
+                            <div class="details-section">
+                                <h3 class="section-title">Watch</h3>
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/UCfuypTYutE" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -82,5 +192,19 @@
             <div class="status">Available for work</div>
         </footer>
     </div>
+
+    <script>
+        function toggleCard(card) {
+            document.querySelectorAll('.project-card').forEach(c => {
+                if (c !== card) c.classList.remove('expanded');
+            });
+            card.classList.toggle('expanded');
+            if (card.classList.contains('expanded')) {
+                setTimeout(() => {
+                    card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        }
+    </script>
 </body>
 </html>
