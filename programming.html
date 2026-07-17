@@ -199,6 +199,68 @@
                 </div>
             </div>
 
+            <!-- HTN Visualizer -->
+            <div class="project-card" onclick="toggleCard(this)">
+                <div class="card-preview">
+                    <img src="images/HTNVisualizerScreenshot.png" alt="HTN Visualizer" class="card-thumbnail">
+                    <span class="expand-icon">+</span>
+                    <div class="card-overlay">
+                        <div class="card-number">02 / PROJECT</div>
+                        <h2 class="card-title">HTN Visualizer</h2>
+                        <div class="card-tags">
+                            <span class="tag">AI Tooling</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">ImGui</span>
+                            <span class="tag">Dev Tools</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div class="details-content">
+ 
+                        <!-- Overview -->
+                        <div class="details-section">
+                            <h3 class="section-title">What is HTN Visualizer?</h3>
+                            <p class="details-text">
+                                HTN Visualizer is a C++ / Dear ImGui tool for authoring and debugging Hierarchical Task Network (HTN) AI trees. It gives you a searchable node hierarchy, a live draggable node graph of task decomposition, a property inspector, and a mini-map for navigating large trees.
+                            </p>
+                            <p class="details-text">
+                                This is a personal, from-scratch version of a tool concept I worked on during my AAA experience at IO Interactive on <em>007: First Light</em>. The architecture and serialization format used here are entirely independent. It contains no proprietary code, data or assets.
+                            </p>
+                        </div>
+ 
+                        <!-- Why I built it -->
+                        <div class="details-section">
+                            <h3 class="section-title">Why I built it</h3>
+                            <p class="details-text">
+                                At IO Interactive, our AI behavior definitions lived in an in-house DSL built almost entirely out of macros and strings. That meant AI programmers had no symbol navigation in the IDE, finding a specific task in a large tree meant text-searching through it by hand. I built a proof-of-concept visualizer there to make that tree browsable and debuggable at a glance, with the long-term idea of growing it into something closer to Unreal Engine's Behavior Tree editor. Eventually letting you create tasks directly from the editor, not just inspect them.
+                            </p>
+                            <p class="details-text">
+                                This repo is my own independent take on that same problem, built from scratch on my own time.
+                            </p>
+                        </div>
+ 
+                        <!-- Features -->
+                        <div class="details-section">
+                            <h3 class="section-title">Features</h3>
+                            <div class="image-gallery">
+                                <img src="images/HTNVisualizerScreenshot.png" alt="HTN Visualizer Editor" class="gallery-image">
+                            </div>
+                            <ul class="details-list">
+                                <li><strong>Node Hierarchy:</strong> Searchable list view of the full task tree, from compound tasks down to primitive tasks, with jump-to-source ("Open in File") from any node</li>
+                                <li><strong>Visual Node Graph:</strong> Real-time, draggable node canvas showing task decomposition relationships</li>
+                                <li><strong>Node Properties:</strong> Live inspection of a selected task's name, type, and custom parameters</li>
+                                <li><strong>Mini Map:</strong> Zoomable overview for fast navigation on larger trees</li>
+                            </ul>
+                        </div>
+ 
+                        <div class="project-links">
+                            <a href="https://github.com/EsgiJ/HTN_Visualizer" class="project-link primary" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
             <!-- Coop TPS Game -->
             <div class="project-card" onclick="toggleCard(this)">
                 <div class="card-preview">
