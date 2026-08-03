@@ -29,15 +29,28 @@
     }, 200);
   }
 
-  function track(path, title) {
-    try {
-      queue.push({ path: path, title: title, event: true });
-      startPolling();
-    } catch (e) {}
-  }
-
   function slugify(s) {
     return String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+
+  // ---- page key, used to prefix every path except the referral event ----
+  function pageKey() {
+    try {
+      var last = location.pathname.split('/').filter(Boolean).pop() || '';
+      var name = last.replace(/\.[^.]*$/, '');
+      return slugify(name) || 'index';
+    } catch (e) { return 'index'; }
+  }
+  var PAGE_KEY = pageKey();
+  var PAGE_LABEL = PAGE_KEY.charAt(0).toUpperCase() + PAGE_KEY.slice(1);
+
+  function track(path, title, skipPrefix) {
+    try {
+      var fullPath = skipPrefix ? path : (PAGE_KEY + '-' + path);
+      var fullTitle = skipPrefix ? title : (PAGE_LABEL + ' - ' + title);
+      queue.push({ path: fullPath, title: fullTitle, event: true });
+      startPolling();
+    } catch (e) {}
   }
 
   // ---- 1. referral code ----
@@ -45,13 +58,15 @@
     var r = new URLSearchParams(location.search).get('r');
     if (r) {
       var clean = r.toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 32);
-      if (clean) track('ref-' + clean, 'Referral: ' + clean);
+      if (clean) track('ref-' + clean, 'Referral: ' + clean, true);
     }
   } catch (e) {}
 
   // ---- 2. scroll depth ----
   try {
     var scrollFired = { 25: false, 50: false, 75: false, 100: false };
+    // 100 fires at 99% in practice: browsers/mobile URL-bar collapse rarely let pct hit a true 100
+    var scrollThresholds = { 25: 25, 50: 50, 75: 75, 100: 99 };
     var ticking = false;
     function checkScroll() {
       ticking = false;
@@ -61,7 +76,7 @@
         var max = doc.scrollHeight - doc.clientHeight;
         var pct = max > 0 ? (scrollTop / max) * 100 : 100;
         [25, 50, 75, 100].forEach(function (t) {
-          if (!scrollFired[t] && pct >= t) {
+          if (!scrollFired[t] && pct >= scrollThresholds[t]) {
             scrollFired[t] = true;
             track('scroll-' + t, 'Scroll ' + t + '%');
           }
