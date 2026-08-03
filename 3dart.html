@@ -1,269 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Art - Oğuzhan Esgiyusufoglu</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Art - Oğuzhan Esgiyusufo</title>
+<meta name="description" content="Character modeling, texturing and rigging in Blender and Substance Painter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Page Header -->
-        <header class="page-header">
-            <a href="index.html" class="back-link">← Back</a>
-            <h1 class="page-title">3D Art</h1>
-            <p class="page-subtitle">Character Modeling / Texturing / Blender</p>
-        </header>
 
-        <!-- Projects Grid -->
-        <div class="projects-grid">
-            
-            <!-- Guts Character -->
-            <div class="project-card" onclick="toggleCard(this)">
-                <div class="card-preview">
-                    <img src="images/finalrender1.png" alt="Guts" class="card-thumbnail">
-                    <span class="expand-icon">+</span>
-                    <div class="card-overlay">
-                        <div class="card-number">01 / PROJECT</div>
-                        <h2 class="card-title">Guts - Berserk</h2>
-                        <div class="card-tags">
-                            <span class="tag">Blender</span>
-                            <span class="tag">Substance Painter</span>
-                            <span class="tag">Game-Ready</span>
-                            <span class="tag">Modeling</span>
-                            <span class="tag">Texturing</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-details">
-                    <div class="details-content">
-                        <div class="details-section">
-                            <h3 class="section-title">Project Overview</h3>
-                            <p class="details-text">
-                                This project showcases a personal project where I created a 3D model of Guts, the iconic character from the manga series Berserk. This was an ambitious challenge, as I had never created a realistic 3D character model before. My goal was to learn and implement the entire 3D character art pipeline, from initial sculpting to final rendering.
-                            </p>
-                        </div>
+<a class="skip" href="#main">Skip to content</a>
 
-                        <div class="details-section">
-                            <h3 class="section-title">Gallery</h3>
-                            <div class="image-gallery">
-                                <img src="images/finalrender1.png" alt="Guts Render 1" class="gallery-image">
-                                <img src="images/finalrender7.png" alt="Guts Render 2" class="gallery-image">
-                                <img src="images/finalrender3.png" alt="Guts Render 3" class="gallery-image">
-                                <img src="images/dragonslayer.png" alt="Dragonslayer" class="gallery-image">
-                            </div>
-                        </div>
+<nav class="navbar" id="navbar">
+  <div class="navbar__brand">
+    <a class="navbar__name" href="index.html">Oğuzhan Esgiyusufo</a>
+    <button class="navbar__burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="navbar__menu" id="navmenu">
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="3dart.html">3D Art</a>
+    <a href="resume.html">Resume</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</nav>
 
-                        <div class="details-section">
-                            <h3 class="section-title">Process</h3>
-                            <ul class="details-list">
-                                <li><strong>Base Mesh Creation:</strong> Started with a basic human mesh to establish proportions and overall shape</li>
-                                <li><strong>Sculpting:</strong> Meticulously sculpted the body and facial features using Blender's sculpting tools, paying close attention to muscle structure and anatomical accuracy</li>
-                                <li><strong>Armor and Weapons:</strong> Each piece of armor and Guts' iconic Dragonslayer sword was separately modeled using hard surface modeling techniques</li>
-                                <li><strong>Retopology:</strong> Created a clean, low-poly retopology suitable for animation</li>
-                                <li><strong>Rigging & Weight Painting:</strong> Rigged the character ensuring a functional skeleton with full range of motion</li>
-                                <li><strong>Texturing:</strong> Created realistic textures in Substance Painter for skin, armor, and weapon</li>
-                                <li><strong>Rendering:</strong> Final renders done in Blender using Cycles engine</li>
-                            </ul>
-                        </div>
+<div class="section">
+  <div class="container columns">
 
-                        <div class="details-section">
-                            <h3 class="section-title">Tools Used</h3>
-                            <ul class="details-list">
-                                <li>Blender - Modeling, Sculpting, Rigging, Rendering</li>
-                                <li>Adobe Substance 3D Painter - Texturing</li>
-                            </ul>
-                        </div>
-
-                        <div class="details-section">
-                            <h3 class="section-title">Project Duration</h3>
-                            <p class="details-text">
-                                The entire project took approximately 3 months of full-time dedication, involving extensive trial and error, learning new software, and overcoming numerous challenges. The end result was not just a 3D model but a significant milestone in my journey as a 3D artist.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Dwarf Character -->
-            <div class="project-card" onclick="toggleCard(this)">
-                <div class="card-preview">
-                    <img src="https://i.ytimg.com/vi/jOtejwuMcxg/maxresdefault.jpg" alt="Dwarf" class="card-thumbnail">
-                    <span class="expand-icon">+</span>
-                    <div class="card-overlay">
-                        <div class="card-number">02 / PROJECT</div>
-                        <h2 class="card-title">Dwarf Character</h2>
-                        <div class="card-tags">
-                            <span class="tag">Blender</span>
-                            <span class="tag">Substance Painter</span>
-                            <span class="tag">Game-Ready</span>
-                            <span class="tag">Modeling</span>
-                            <span class="tag">Texturing</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-details">
-                    <div class="details-content">
-                        <div class="details-section">
-                            <h3 class="section-title">Project Overview</h3>
-                            <p class="details-text">
-                                I was asked to create a game-ready Dwarf character for a university club's fantasy-themed game. Given a detailed concept, I completed the model in just two weeks, leveraging my experience from the previous Guts project.
-                            </p>
-                        </div>
-
-                        <div class="details-section">
-                            <h3 class="section-title">Turntable</h3>
-                            <div class="video-container">
-                                <iframe src="https://www.youtube.com/embed/jOtejwuMcxg" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-
-                        <div class="details-section">
-                            <h3 class="section-title">Process</h3>
-                            <ul class="details-list">
-                                <li><strong>Concept & Sculpting:</strong> Quickly blocked out the character and sculpted key features like the beard and armor details</li>
-                                <li><strong>Hair Creation:</strong> Used hair cards for the beard and hair, ensuring the model remained optimized for real-time use</li>
-                                <li><strong>Rigging & Weight Painting:</strong> Rigged the character for smooth animations, paying special attention to the beard and armor</li>
-                                <li><strong>Texturing:</strong> Created detailed textures in Substance Painter, focusing on realistic materials and wear</li>
-                            </ul>
-                        </div>
-
-                        <div class="details-section">
-                            <h3 class="section-title">Outcome</h3>
-                            <p class="details-text">
-                                The character was completed efficiently, meeting game-ready standards. This project enhanced my skills in creating optimized models for game environments, particularly in hair card usage and realistic texturing.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Jolly Jumper -->
-            <div class="project-card" onclick="toggleCard(this)">
-                <div class="card-preview">
-                    <img src="images/filmler-ve-tv-28.01.2024-16_53_34.png" alt="Jolly Jumper" class="card-thumbnail">
-                    <span class="expand-icon">+</span>
-                    <div class="card-overlay">
-                        <div class="card-number">03 / PROJECT</div>
-                        <h2 class="card-title">Jolly Jumper - GGJ 2024</h2>
-                        <div class="card-tags">
-                            <span class="tag">Game Jam</span>
-                            <span class="tag">3D Artist</span>
-                            <span class="tag">Modeling</span>
-                            <span class="tag">Texturing</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-details">
-                    <div class="details-content">
-                        <div class="details-section">
-                            <h3 class="section-title">Global Game Jam 2024</h3>
-                            <p class="details-text">
-                                During the Global Game Jam 2024, I had the opportunity to work as the 3D artist for our game "Jolly Jumper." The theme was "Make Me Laugh," and we decided to create a first-person game where players attempt to make people laugh by punching them.
-                            </p>
-                        </div>
-
-                        <div class="details-section">
-                            <h3 class="section-title">Screenshots</h3>
-                            <div class="image-gallery">
-                                <img src="images/filmler-ve-tv-28.01.2024-16_53_34.png" alt="Jolly Jumper 1" class="gallery-image">
-                                <img src="images/filmler-ve-tv-28.01.2024-16_51_39.png" alt="Jolly Jumper 2" class="gallery-image">
-                                <img src="images/filmler-ve-tv-28.01.2024-16_50_56.png" alt="Jolly Jumper 3" class="gallery-image">
-                                <img src="images/filmler-ve-tv-28.01.2024-16_48_44.png" alt="Jolly Jumper 4" class="gallery-image">
-                            </div>
-                        </div>
-
-                        <div class="details-section">
-                            <h3 class="section-title">Experience</h3>
-                            <p class="details-text">
-                                While I can't say that I am particularly proud of the game concept itself, this project was an invaluable experience in teamwork and rapid development. Collaborating with my team under the time constraints of a game jam allowed me to refine my skills in 3D modeling and animation, as well as learn the dynamics of effective collaboration in a high-pressure environment.
-                            </p>
-                        </div>
-
-                        <div class="project-links">
-                            <a href="https://globalgamejam.org/games/2024/jolly-jumper-7" class="project-link primary" target="_blank">Game Jam Page</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DOGDOK TPS -->
-            <div class="project-card" onclick="toggleCard(this)">
-                <div class="card-preview">
-                    <img src="images/image.png" alt="DOGDOK TPS" class="card-thumbnail">
-                    <span class="expand-icon">+</span>
-                    <div class="card-overlay">
-                        <div class="card-number">04 / PROJECT</div>
-                        <h2 class="card-title">YTÜ DOGDOK - TPS Game</h2>
-                        <div class="card-tags">
-                            <span class="tag">3D Artist</span>
-                            <span class="tag">Modeling</span>
-                            <span class="tag">Texturing</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-details">
-                    <div class="details-content">
-                        <div class="details-section">
-                            <h3 class="section-title">Club Project</h3>
-                            <p class="details-text">
-                                During the 2023-2024 academic year, I served as the Sponsorship Coordinator and a board member of the Digital Game Development and Digital Gaming Club at Yıldız Technical University. Currently, in the 2024-2025 term, I am taking on the role of Game Development Coordinator.
-                            </p>
-                        </div>
-
-                        <div class="details-section">
-                            <h3 class="section-title">Videos</h3>
-                            <div class="video-container">
-                                <iframe src="https://www.youtube.com/embed/ZoIaXxH2J-8" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="video-container" style="margin-top: 15px;">
-                                <iframe src="https://www.youtube.com/embed/MBm7Yu0QAn8" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-
-                        <div class="details-section">
-                            <h3 class="section-title">Screenshots</h3>
-                            <div class="image-gallery">
-                                <img src="images/image.png" alt="DOGDOK 1" class="gallery-image">
-                                <img src="images/image1.png" alt="DOGDOK 2" class="gallery-image">
-                            </div>
-                        </div>
-
-                        <div class="details-section">
-                            <h3 class="section-title">My Contribution</h3>
-                            <p class="details-text">
-                                In the 2023-2024 term, our game development team decided to create a game in three months to showcase our club's activities and attract potential members during the university's opening week. For this project, I modeled the main character, a turret, and the base generator. Additionally, I was responsible for texturing numerous models within the game.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+    <aside class="col-side">
+      <div class="side">
+        <div class="side__photo">
+          <img src="images/img_20240623_212534.jpg" alt="Oğuzhan Esgiyusufo" onerror="this.parentNode.classList.add('shot--empty')">
+          <span class="shot__ph">images/img_20240623_212534.jpg</span>
         </div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="social-links">
-                <a href="https://github.com/EsgiJ">GitHub</a>
-                <a href="https://www.artstation.com/oguzhan_esgiyusufo">ArtStation</a>
-                <a href="https://www.instagram.com/esgijj/">Instagram</a>
-            </div>
-        </footer>
-    </div>
+        <h1 class="side__name"><a href="index.html">Oğuzhan Esgiyusufo</a></h1>
+        <p class="side__role">Programmer</p>
 
-    <script>
-        function toggleCard(card) {
-            document.querySelectorAll('.project-card').forEach(c => {
-                if (c !== card) c.classList.remove('expanded');
-            });
-            card.classList.toggle('expanded');
-            if (card.classList.contains('expanded')) {
-                setTimeout(() => {
-                    card.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 100);
-            }
-        }
-    </script>
+        <ul class="side__contact">
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:oguzhanesgiyusufo@gmail.com">oguzhanesgiyusufo@gmail.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Istanbul, Turkey</li>
+        </ul>
+
+        <ul class="side__bullets">
+          <li>AAA experience at <strong>IO Interactive</strong> on <strong>007: First Light</strong> and <strong>Project Fantasy</strong>.</li>
+          <li>Building <strong>Luden Engine</strong>, a C++20 engine with a custom <strong>ECS</strong>, from scratch.</li>
+          <li>Finishing <strong>Computer Engineering</strong> at Yıldız Technical University.</li>
+        </ul>
+
+        <hr class="side__rule">
+
+        <div class="side__buttons">
+          <a class="pill" href="index.html#experience">Experience</a>
+          <a class="pill" href="index.html#projects">Projects</a>
+          <a class="pill" href="3dart.html">3D Art</a>
+          <a class="pill" href="resume.html">Resume</a>
+        </div>
+
+        <hr class="side__rule">
+
+        <div class="side__social">
+          <a href="https://www.linkedin.com/in/oguzhan-esgiyusufo/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/EsgiJ" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.artstation.com/oguzhan_esgiyusufo" target="_blank" rel="noopener" aria-label="ArtStation"><i class="fa-brands fa-artstation"></i></a>
+          <a href="mailto:oguzhanesgiyusufo@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="col-main" id="main">
+
+      <h2 class="h2">3D Art</h2>
+      <p>
+        Before I moved fully into programming I spent a few years on character art in
+        <strong>Blender</strong> and <strong>Substance Painter</strong>. I keep it listed because knowing
+        the asset pipeline makes me quicker at prototyping and easier to work with when I am writing tools
+        that artists have to use.
+      </p>
+
+      <!-- ─────────── GUTS ─────────── -->
+      <section class="entry">
+        <div class="entry__logo entry__logo--glyph"><i class="fa-solid fa-user-ninja"></i></div>
+        <h3 class="entry__company">Guts, Berserk</h3>
+        <h4 class="entry__role">Realistic Character, Personal Project</h4>
+        <p class="entry__meta">
+          <i class="fa-regular fa-calendar"></i> ~3 months
+          <i class="fa-solid fa-user"></i> Solo
+        </p>
+
+        <div class="cols">
+          <div class="cols__left">
+            <div class="art">
+              <img src="images/finalrender1.png" alt="Guts, final render" loading="lazy" onerror="this.parentNode.classList.add('shot--empty')">
+              <span class="shot__ph">images/finalrender1.png</span>
+            </div>
+            <h4 class="proj__title">Guts, Berserk</h4>
+            <p class="proj__genre">Game-ready realistic character</p>
+            <p>Developed using <strong>Blender</strong> and <strong>Adobe Substance 3D Painter</strong>.</p>
+          </div>
+
+          <div class="cols__right">
+            <div class="info">
+              <div class="info__cell"><span class="info__label">Project</span><span class="info__value">Guts, Berserk</span></div>
+              <div class="info__cell"><span class="info__label">Role</span><span class="info__value">Solo</span></div>
+              <div class="info__cell"><span class="info__label">Type</span><span class="info__value">Realistic character</span></div>
+              <div class="info__cell"><span class="info__label">Software</span><span class="info__value">Blender, Substance Painter</span></div>
+              <div class="info__cell"><span class="info__label">Duration</span><span class="info__value">About 3 months</span></div>
+              <div class="info__cell"><span class="info__label">Status</span><span class="info__value">Completed</span></div>
+            </div>
+
+            <h3 class="h3">Related Links</h3>
+            <a class="linkbtn" href="https://www.artstation.com/oguzhan_esgiyusufo" target="_blank" rel="noopener">ArtStation Profile</a>
+          </div>
+        </div>
+
+        <div class="detail">
+          <h3 class="h3 label">Project Description:</h3>
+          <p>
+            My first realistic character. The goal was to run the entire 3D character pipeline end to end,
+            from block-out to final render, without skipping the parts I was bad at.
+          </p>
+
+          <h3 class="h3 label">Pipeline:</h3>
+          <ul>
+            <li><strong>Base mesh:</strong> proportions and silhouette established first.</li>
+            <li><strong>Sculpting:</strong> body and face in Blender, working from muscle structure and anatomy.</li>
+            <li><strong>Hard surface:</strong> every armour piece and the Dragonslayer modeled separately.</li>
+            <li><strong>Retopology:</strong> clean low-poly mesh suitable for animation.</li>
+            <li><strong>Rigging and weight painting:</strong> full range of motion.</li>
+            <li><strong>Texturing:</strong> skin, armour and weapon in Substance Painter.</li>
+            <li><strong>Rendering:</strong> Cycles.</li>
+          </ul>
+        </div>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel__track">
+            <figure class="carousel__slide"><img src="images/finalrender1.png" alt="Guts render 1" loading="lazy"><figcaption>Final render.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/finalrender7.png" alt="Guts render 2" loading="lazy"><figcaption>Final render.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/finalrender3.png" alt="Guts render 3" loading="lazy"><figcaption>Final render.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/dragonslayer.png" alt="Dragonslayer" loading="lazy"><figcaption>The Dragonslayer, modeled separately.</figcaption></figure>
+          </div>
+          <button class="carousel__nav carousel__nav--prev" type="button" aria-label="Previous">&lsaquo;</button>
+          <button class="carousel__nav carousel__nav--next" type="button" aria-label="Next">&rsaquo;</button>
+          <div class="carousel__dots" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <hr class="entry-rule">
+
+      <!-- ─────────── DWARF ─────────── -->
+      <section class="entry">
+        <div class="entry__logo entry__logo--glyph"><i class="fa-solid fa-hammer"></i></div>
+        <h3 class="entry__company">Dwarf Character</h3>
+        <h4 class="entry__role">Game-Ready Character, Commissioned</h4>
+        <p class="entry__meta">
+          <i class="fa-regular fa-calendar"></i> 2 weeks
+          <i class="fa-solid fa-user"></i> Solo
+        </p>
+
+        <div class="cols">
+          <div class="cols__left">
+            <div class="art">
+              <img src="https://i.ytimg.com/vi/jOtejwuMcxg/maxresdefault.jpg" alt="Dwarf character turntable" loading="lazy">
+            </div>
+            <h4 class="proj__title">Dwarf Character</h4>
+            <p class="proj__genre">Fantasy character for a university club game</p>
+            <p>Developed using <strong>Blender</strong> and <strong>Substance Painter</strong>.</p>
+          </div>
+
+          <div class="cols__right">
+            <div class="info">
+              <div class="info__cell"><span class="info__label">Project</span><span class="info__value">Dwarf Character</span></div>
+              <div class="info__cell"><span class="info__label">Role</span><span class="info__value">Solo</span></div>
+              <div class="info__cell"><span class="info__label">Type</span><span class="info__value">Game-ready character</span></div>
+              <div class="info__cell"><span class="info__label">Software</span><span class="info__value">Blender, Substance Painter</span></div>
+              <div class="info__cell"><span class="info__label">Duration</span><span class="info__value">2 weeks</span></div>
+              <div class="info__cell"><span class="info__label">Status</span><span class="info__value">Delivered</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail">
+          <h3 class="h3 label">Project Description:</h3>
+          <p>
+            A commissioned game-ready character for a university club's fantasy game, delivered from a
+            detailed concept in two weeks using everything the Guts project had taught me.
+          </p>
+
+          <h3 class="h3 label">My Responsibilities:</h3>
+          <ul>
+            <li><strong>Hair cards</strong> for beard and hair, keeping the model optimised for real-time use.</li>
+            <li>Rigged for smooth animation, with care around beard and armour deformation.</li>
+            <li>Detailed material and wear passes in Substance Painter.</li>
+          </ul>
+        </div>
+
+        <div class="videos">
+          <h3 class="h3">Turntable</h3>
+          <div class="videos__grid">
+            <div class="video"><iframe src="https://www.youtube.com/embed/jOtejwuMcxg" title="Dwarf turntable" loading="lazy" allowfullscreen></iframe></div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="entry-rule">
+
+      <!-- ─────────── JOLLY JUMPER ─────────── -->
+      <section class="entry">
+        <div class="entry__logo entry__logo--glyph"><i class="fa-solid fa-face-laugh"></i></div>
+        <h3 class="entry__company">Global Game Jam 2024</h3>
+        <h4 class="entry__role">3D Artist</h4>
+        <p class="entry__meta">
+          <i class="fa-regular fa-calendar"></i> 2024
+          <i class="fa-solid fa-location-dot"></i> Istanbul, Turkey
+        </p>
+
+        <div class="cols">
+          <div class="cols__left">
+            <div class="art">
+              <img src="images/filmler-ve-tv-28.01.2024-16_53_34.png" alt="Jolly Jumper" loading="lazy" onerror="this.parentNode.classList.add('shot--empty')">
+              <span class="shot__ph">images/filmler-ve-tv-28.01.2024-16_53_34.png</span>
+            </div>
+            <p class="platforms"><i class="fa-brands fa-windows"></i></p>
+            <h4 class="proj__title">Jolly Jumper</h4>
+            <p class="proj__genre">First-person comedy, game jam entry</p>
+            <p>Developed for <strong>Global Game Jam 2024</strong>, on the theme "Make Me Laugh".</p>
+          </div>
+
+          <div class="cols__right">
+            <div class="info">
+              <div class="info__cell"><span class="info__label">Project</span><span class="info__value">Jolly Jumper</span></div>
+              <div class="info__cell"><span class="info__label">Role</span><span class="info__value">3D Artist</span></div>
+              <div class="info__cell"><span class="info__label">Genre</span><span class="info__value">First-person comedy</span></div>
+              <div class="info__cell"><span class="info__label">Event</span><span class="info__value">Global Game Jam 2024</span></div>
+              <div class="info__cell"><span class="info__label">Platforms</span><span class="info__value">PC</span></div>
+              <div class="info__cell"><span class="info__label">Status</span><span class="info__value">Completed</span></div>
+            </div>
+
+            <h3 class="h3">Related Links</h3>
+            <a class="linkbtn" href="https://globalgamejam.org/games/2024/jolly-jumper-7" target="_blank" rel="noopener">Game Jam Page</a>
+          </div>
+        </div>
+
+        <div class="detail">
+          <h3 class="h3 label">Project Description:</h3>
+          <p>
+            I was the 3D artist on our GGJ 2024 entry, a first-person game about making people laugh by
+            punching them. I am not precious about the concept, but it was a useful lesson in rapid
+            production under a hard deadline and in how a small team divides work when there is no time to
+            negotiate.
+          </p>
+        </div>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel__track">
+            <figure class="carousel__slide"><img src="images/filmler-ve-tv-28.01.2024-16_53_34.png" alt="Jolly Jumper 1" loading="lazy"><figcaption>In-game screenshot.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/filmler-ve-tv-28.01.2024-16_51_39.png" alt="Jolly Jumper 2" loading="lazy"><figcaption>In-game screenshot.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/filmler-ve-tv-28.01.2024-16_50_56.png" alt="Jolly Jumper 3" loading="lazy"><figcaption>In-game screenshot.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/filmler-ve-tv-28.01.2024-16_48_44.png" alt="Jolly Jumper 4" loading="lazy"><figcaption>In-game screenshot.</figcaption></figure>
+          </div>
+          <button class="carousel__nav carousel__nav--prev" type="button" aria-label="Previous">&lsaquo;</button>
+          <button class="carousel__nav carousel__nav--next" type="button" aria-label="Next">&rsaquo;</button>
+          <div class="carousel__dots" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <hr class="entry-rule">
+
+      <!-- ─────────── DOGDOK TPS ─────────── -->
+      <section class="entry">
+        <div class="entry__logo">
+          <img src="images/logo-dogdok.png" alt="YTU DOGDOK" onerror="this.parentNode.classList.add('shot--empty')">
+          <span class="shot__ph">images/logo-dogdok.png</span>
+        </div>
+        <h3 class="entry__company">YTU DOGDOK</h3>
+        <h4 class="entry__role">3D Artist</h4>
+        <p class="entry__meta">
+          <i class="fa-regular fa-calendar"></i> 3 months
+          <i class="fa-solid fa-location-dot"></i> Istanbul, Turkey
+        </p>
+
+        <div class="cols">
+          <div class="cols__left">
+            <div class="art">
+              <img src="images/image.png" alt="Club third-person shooter" loading="lazy" onerror="this.parentNode.classList.add('shot--empty')">
+              <span class="shot__ph">images/image.png</span>
+            </div>
+            <p class="platforms"><i class="fa-brands fa-windows"></i></p>
+            <h4 class="proj__title">Club Third-Person Shooter</h4>
+            <p class="proj__genre">Third-person shooter, student team</p>
+            <p>Developed using <strong>Unreal Engine</strong>, in three months.</p>
+          </div>
+
+          <div class="cols__right">
+            <div class="info">
+              <div class="info__cell"><span class="info__label">Project</span><span class="info__value">Club TPS</span></div>
+              <div class="info__cell"><span class="info__label">Role</span><span class="info__value">3D Artist</span></div>
+              <div class="info__cell"><span class="info__label">Genre</span><span class="info__value">Third-person shooter</span></div>
+              <div class="info__cell"><span class="info__label">Engine</span><span class="info__value">Unreal Engine</span></div>
+              <div class="info__cell"><span class="info__label">Platforms</span><span class="info__value">PC</span></div>
+              <div class="info__cell"><span class="info__label">Status</span><span class="info__value">Completed</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail">
+          <h3 class="h3 label">Project Description:</h3>
+          <p>
+            Our team built a playable game in three months to showcase the club during the university's
+            opening week and attract new members.
+          </p>
+
+          <h3 class="h3 label">My Responsibilities:</h3>
+          <ul>
+            <li>Modeled the <strong>main character</strong>, the turret and the base generator.</li>
+            <li>Textured a large portion of the game's assets.</li>
+          </ul>
+        </div>
+
+        <div class="videos">
+          <h3 class="h3">Game Video</h3>
+          <div class="videos__grid">
+            <div class="video"><iframe src="https://www.youtube.com/embed/ZoIaXxH2J-8" title="Club TPS video 1" loading="lazy" allowfullscreen></iframe></div>
+            <div class="video"><iframe src="https://www.youtube.com/embed/MBm7Yu0QAn8" title="Club TPS video 2" loading="lazy" allowfullscreen></iframe></div>
+          </div>
+        </div>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel__track">
+            <figure class="carousel__slide"><img src="images/image.png" alt="Club TPS 1" loading="lazy"><figcaption>In-game screenshot.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/image1.png" alt="Club TPS 2" loading="lazy"><figcaption>In-game screenshot.</figcaption></figure>
+          </div>
+          <button class="carousel__nav carousel__nav--prev" type="button" aria-label="Previous">&lsaquo;</button>
+          <button class="carousel__nav carousel__nav--next" type="button" aria-label="Next">&rsaquo;</button>
+          <div class="carousel__dots" aria-hidden="true"></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<footer class="footer">© <span id="year">2026</span> Oğuzhan Esgiyusufo</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

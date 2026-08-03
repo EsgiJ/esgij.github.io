@@ -1,64 +1,665 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oğuzhan Esgiyusufo</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oğuzhan Esgiyusufo - Programmer</title>
+<meta name="description" content="Systems-oriented game programmer. Software Engineer Intern at IO Interactive on 007: First Light and Project Fantasy. Building Luden Engine, a C++20 engine with a custom ECS.">
+<meta property="og:title" content="Oğuzhan Esgiyusufo - Programmer">
+<meta property="og:description" content="AAA experience at IO Interactive. Building Luden Engine, a C++20 engine with a custom ECS, from scratch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <h1 class="name">Oğuzhan Esgiyusufo</h1>
-            <p class="tagline">Programmer</p>
-        </header>
 
-        <!-- Navigation Grid -->
-        <nav class="nav-grid">
-            <a href="about.html" class="nav-card">
-                <img src="images/img_20240623_212534.jpg" alt="About" class="card-image">
-                <div class="card-content">
-                    <div class="card-number">01</div>
-                    <h2 class="card-title">About</h2>
-                </div>
-            </a>
+<a class="skip" href="#main">Skip to content</a>
 
-            <a href="programming.html" class="nav-card">
-                <img src="images/LudenEngineZooGameSceneEditorTab.png" alt="Programming" class="card-image">
-                <div class="card-content">
-                    <div class="card-number">02</div>
-                    <h2 class="card-title">Programming</h2>
-                </div>
-            </a>
+<nav class="navbar" id="navbar">
+  <div class="navbar__brand">
+    <a class="navbar__name" href="index.html">Oğuzhan Esgiyusufo</a>
+    <button class="navbar__burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="navbar__menu" id="navmenu">
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="3dart.html">3D Art</a>
+    <a href="resume.html">Resume</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-            <a href="3dart.html" class="nav-card">
-                <img src="images/finalrender1.png" alt="3D Art" class="card-image">
-                <div class="card-content">
-                    <div class="card-number">03</div>
-                    <h2 class="card-title">3D Art</h2>
-                </div>
-            </a>
+<div class="section">
+  <div class="container columns">
 
-            <a href="resume.html" class="nav-card">
-                <img src="images/Resume.png" alt="Resume" class="card-image">
-                <div class="card-content">
-                    <div class="card-number">04</div>
-                    <h2 class="card-title">Resume</h2>
-                </div>
-            </a>
-        </nav>
+    <!-- ══════════════════ SIDEBAR ══════════════════ -->
+    <aside class="col-side">
+      <div class="side">
+        <div class="side__photo">
+          <img src="images/img_20240623_212534.jpg" alt="Oğuzhan Esgiyusufo" onerror="this.parentNode.classList.add('shot--empty')">
+          <span class="shot__ph">images/img_20240623_212534.jpg</span>
+        </div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/oguzhan-esgiyusufo/">LinkedIn</a>
-                <a href="https://github.com/EsgiJ">GitHub</a>
-                <a href="https://www.artstation.com/oguzhan_esgiyusufo">ArtStation</a>
-                <a href="https://www.instagram.com/esgijj/">Instagram</a>
+        <h1 class="side__name"><a href="index.html">Oğuzhan Esgiyusufo</a></h1>
+        <p class="side__role">Programmer</p>
+
+        <ul class="side__contact">
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:oguzhanesgiyusufo@gmail.com">oguzhanesgiyusufo@gmail.com</a></li>
+          <li><i class="fa-solid fa-phone"></i> +90 535 262 9552</li>
+        </ul>
+
+        <ul class="side__bullets">
+          <li>AAA experience at <strong>IO Interactive</strong> on <strong>007: First Light</strong> and <strong>Project Fantasy</strong>.</li>
+          <li>Building <strong>Luden Engine</strong>, a C++20 engine with a custom <strong>ECS</strong>, from scratch.</li>
+          <li>Graduated in <strong>Computer Engineering</strong> from <strong>Yıldız Technical University</strong>.</li>
+        </ul>
+
+        <hr class="side__rule">
+
+        <div class="side__buttons">
+          <a class="pill" href="#experience">Experience</a>
+          <a class="pill" href="#projects">Projects</a>
+          <a class="pill" href="3dart.html">3D Art</a>
+          <a class="pill" href="resume.html">Resume</a>
+        </div>
+
+        <hr class="side__rule">
+
+        <div class="side__social">
+          <a href="https://www.linkedin.com/in/oguzhan-esgiyusufo/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/EsgiJ" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.artstation.com/oguzhan_esgiyusufo" target="_blank" rel="noopener" aria-label="ArtStation"><i class="fa-brands fa-artstation"></i></a>
+          <a href="mailto:oguzhanesgiyusufo@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ══════════════════ MAIN COLUMN ══════════════════ -->
+    <main class="col-main" id="main">
+
+      <div class="hero-art">
+        <!-- Add a wide 007 First Light press-kit image at images/banner-007.jpg -->
+        <img src="images/banner-007.jpg" alt="007 First Light key art" onerror="this.parentNode.classList.add('shot--empty')">
+        <span class="shot__ph">Add a wide 007 First Light key art image at images/banner-007.jpg</span>
+      </div>
+
+      <!-- ─────────── SUMMARY ─────────── -->
+      <h2 class="h2">Summary</h2>
+
+      <p>
+        Systems-oriented game programmer with hands-on <strong>AAA experience</strong> at
+        <strong>IO Interactive</strong>, where I worked on <strong>007: First Light</strong> and
+        <strong>Project Fantasy</strong> using their proprietary in-house engine. I was a
+        <strong>Software Engineer Intern</strong> there, and the tool I am proudest of from that time is a
+        <strong>C++ / Dear ImGui visualizer</strong> that AI programmers used to debug and monitor the 
+		<strong>AI decision-making architecture</strong> on <strong>007: First Light</strong>.
+      </p>
+      <p>
+        That experience sharpened my focus on <strong>low-level programming</strong> and
+        <strong>engine architecture</strong>. These are the skills I now apply building
+        <strong>Luden Engine</strong>, a <strong>C++20</strong> engine with a custom <strong>ECS</strong>
+        and <strong>data-oriented design</strong>, developed independently from scratch. I am finishing
+        <strong>Computer Engineering</strong> at Yıldız Technical University, based in Istanbul and open to
+        relocation.
+      </p>
+
+      <!-- ─────────── SKILLS ─────────── -->
+      <h2 class="h2">Skills</h2>
+
+      <div class="expertise">
+        <div>
+          <h3 class="h3"><i class="fa-solid fa-code"></i> C++ and Engine Architecture</h3>
+          <ul>
+            <li><strong>C++20</strong>, C and Assembly, with a focus on low-level work.</li>
+            <li>Custom <strong>Entity-Component System</strong>, hand-built from scratch rather than pulled in from a library like EnTT.</li>
+            <li><strong>Cache-friendly data layouts</strong> and manual memory management.</li>
+            <li>Premake and CMake build setups across modular targets.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="h3"><i class="fa-solid fa-gamepad"></i> Unreal Engine and Gameplay</h3>
+          <ul>
+            <li>Unreal Engine with <strong>C++</strong> and Blueprints.</li>
+            <li><strong>Behavior trees</strong> for enemy AI and pathfinding.</li>
+            <li><strong>Motion matching</strong> for character animation.</li>
+            <li>Networking and replication, PCG, MetaHuman and Nanite.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="h3"><i class="fa-solid fa-wrench"></i> Tools and Debugging</h3>
+          <ul>
+            <li><strong>Dear ImGui</strong> tooling, including a debug visualizer used by AI programmers at IO Interactive.</li>
+            <li>A full ImGui-based <strong>level editor</strong> and scene serialization inside Luden Engine.</li>
+            <li><strong>Python automation</strong> tools built to improve QA workflow.</li>
+            <li>Daily QA work across two AAA productions.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="h3"><i class="fa-solid fa-layer-group"></i> Languages and Workflow</h3>
+          <ul>
+            <li>C++ (C++20), C, C#, Java, Python, Assembly.</li>
+            <li><strong>Data-oriented design</strong> and ECS.</li>
+            <li>Unity alongside Unreal Engine.</li>
+            <li>Git and <strong>Perforce</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+      <h2 class="h2" id="experience">Experience</h2>
+
+      <!-- ─────────── IO INTERACTIVE ─────────── -->
+      <section class="entry">
+        <div class="entry__logo">
+          <!-- Add images/logo-ioi.png -->
+          <img src="images/logo-ioi.png" alt="IO Interactive" onerror="this.parentNode.classList.add('shot--empty')">
+          <span class="shot__ph">images/logo-ioi.png</span>
+        </div>
+        <h3 class="entry__company">IO Interactive</h3>
+        <h4 class="entry__role">Software Engineer Intern</h4>
+        <p class="entry__meta">
+          <i class="fa-regular fa-calendar"></i> 11/2024 - 09/2025
+          <i class="fa-solid fa-location-dot"></i> Istanbul, Turkey
+        </p>
+
+        <!-- PROJECT: 007 FIRST LIGHT -->
+        <div class="cols">
+          <div class="cols__left">
+            <div class="art">
+              <img src="images/banner-007.jpg" alt="007: First Light" loading="lazy" onerror="this.parentNode.classList.add('shot--empty')">
+              <span class="shot__ph">images/banner-007.jpg</span>
             </div>
-        </footer>
-    </div>
+            <p class="platforms">
+              <i class="fa-brands fa-playstation"></i>
+              <i class="fa-brands fa-xbox"></i>
+              <i class="fa-brands fa-steam"></i>
+              <i class="fa-brands fa-windows"></i>
+            </p>
+            <h4 class="proj__title">007: First Light</h4>
+            <p class="proj__genre">Action-adventure, single-player</p>
+            <p>Released on <strong>PlayStation 5</strong>, <strong>Xbox Series X|S</strong> and <strong>PC</strong> on 27 May 2026, with a <strong>Nintendo Switch 2</strong> version later in the year.</p>
+            <p>Developed using <strong>Glacier</strong>, IO Interactive's proprietary in-house engine.</p>
+          </div>
+
+          <div class="cols__right">
+            <div class="info">
+              <div class="info__cell"><span class="info__label">Project</span><span class="info__value">007: First Light</span></div>
+              <div class="info__cell"><span class="info__label">Mode</span><span class="info__value">Single-player</span></div>
+              <div class="info__cell"><span class="info__label">Genre</span><span class="info__value">Action-adventure</span></div>
+              <div class="info__cell"><span class="info__label">Engine</span><span class="info__value">Glacier (in-house)</span></div>
+              <div class="info__cell"><span class="info__label">Platforms</span><span class="info__value">PS5, Xbox Series X|S, PC, Switch 2</span></div>
+              <div class="info__cell"><span class="info__label">Status</span><span class="info__value">Released 27 May 2026</span></div>
+            </div>
+
+            <h3 class="h3">Related Links</h3>
+            <a class="linkbtn" href="https://ioi.dk/007firstlightgame" target="_blank" rel="noopener">Official Website</a>
+            <a class="linkbtn" href="https://store.steampowered.com/app/3768760/007_First_Light/" target="_blank" rel="noopener">Steam Page</a>
+          </div>
+        </div>
+
+        <div class="detail">
+          <h3 class="h3 label">Project Description:</h3>
+          <p>
+            A standalone origin story for a young James Bond, recruited into MI6's revived 00-Programme. A
+            narrative action-adventure built around stealth sandboxes, gadgets and set-piece action.
+          </p>
+
+          <h3 class="h3 label">My Responsibilities:</h3>
+          <ul>
+            <li>Built a <strong>C++ / Dear ImGui visualizer tool</strong> used by AI programmers to debug and monitor the <strong>AI decision-making architecture</strong> on <strong>007: First Light</strong>.</li>
+            <li>Created <strong>Python automation tools</strong> to improve QA team efficiency and workflow.</li>
+            <li>Selected for IO Interactive's <strong>Future Devs</strong> program, training Turkey's next generation of AAA developers through hands-on mentorship.</li>
+            <li>Handled <strong>daily QA tasks</strong> on the project.</li>
+          </ul>
+        </div>
+
+        <div class="videos">
+          <h3 class="h3">Game Video</h3>
+          <div class="videos__grid">
+            <div class="video"><iframe src="https://www.youtube.com/embed/jfRZRwu4aEc" title="007 First Light, Launch Trailer" loading="lazy" allowfullscreen></iframe></div>
+            <div class="video"><iframe src="https://www.youtube.com/embed/Jom-jxUEqJg" title="007 First Light, Gameplay Reveal" loading="lazy" allowfullscreen></iframe></div>
+          </div>
+        </div>
+
+        <!-- PROJECT: PROJECT FANTASY -->
+        <div class="cols cols--next">
+          <div class="cols__left">
+            <div class="art">
+              <img src="images/banner-fantasy.jpg" alt="Project Fantasy" loading="lazy" onerror="this.parentNode.classList.add('shot--empty')">
+              <span class="shot__ph">Project Fantasy has no public art released yet</span>
+            </div>
+            <h4 class="proj__title">Project Fantasy</h4>
+            <p class="proj__genre">Online fantasy RPG, unannounced</p>
+            <p>Platforms and release window <strong>not announced</strong>.</p>
+            <p>IO Interactive's <strong>sixth original IP</strong>.</p>
+          </div>
+
+          <div class="cols__right">
+            <div class="info">
+              <div class="info__cell"><span class="info__label">Project</span><span class="info__value">Project Fantasy</span></div>
+              <div class="info__cell"><span class="info__label">Mode</span><span class="info__value">Online multiplayer</span></div>
+              <div class="info__cell"><span class="info__label">Genre</span><span class="info__value">Fantasy RPG</span></div>
+              <div class="info__cell"><span class="info__label">Engine</span><span class="info__value">In-house</span></div>
+              <div class="info__cell"><span class="info__label">Platforms</span><span class="info__value">Unannounced</span></div>
+              <div class="info__cell"><span class="info__label">Status</span><span class="info__value">In development</span></div>
+            </div>
+
+            <h3 class="h3">Related Links</h3>
+            <a class="linkbtn" href="https://ioi.dk/project-fantasy" target="_blank" rel="noopener">Studio Announcement</a>
+          </div>
+        </div>
+
+        <div class="detail">
+          <h3 class="h3 label">Project Description:</h3>
+          <p>
+            IO Interactive's new original IP, an online fantasy RPG the studio describes as a world built
+            from the core to expand for many years.
+          </p>
+
+          <h3 class="h3 label">My Responsibilities:</h3>
+          <ul>
+            <li>Took part in IO Interactive's <strong>Future Devs</strong> program during this period, a mentorship track training the next generation of AAA developers in Turkey.</li>
+            <li>Handled <strong>daily QA tasks</strong> on the project.</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="entry-rule">
+
+      <!-- ─────────── YTU DOGDOK ─────────── -->
+      <section class="entry">
+        <div class="entry__logo">
+          <!-- Add images/logo-dogdok.png -->
+          <img src="images/logo-dogdok.png" alt="YTU DOGDOK" onerror="this.parentNode.classList.add('shot--empty')">
+          <span class="shot__ph">images/logo-dogdok.png</span>
+        </div>
+        <h3 class="entry__company">YTU DOGDOK</h3>
+        <h4 class="entry__role">Game Development Coordinator</h4>
+        <p class="entry__meta">
+          <i class="fa-regular fa-calendar"></i> 06/2024 - 06/2025
+          <i class="fa-solid fa-location-dot"></i> Istanbul, Turkey
+        </p>
+
+        <div class="detail">
+          <h3 class="h3 label">My Responsibilities:</h3>
+          <ul>
+            <li>Organized and hosted <strong>Kramer Jam</strong>, a large-scale game jam event.</li>
+            <li>Managed tours to video game industry companies and events.</li>
+            <li>Organized and moderated the <strong>"Rolleri Tanıyalım / Sektörün Dev'leri"</strong> series, featuring interviews with industry professionals.</li>
+          </ul>
+
+          <h3 class="h3 label">Interviews I Hosted:</h3>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=uDg1FfOi1xg" target="_blank" rel="noopener">Buğra Erke</a>, Senior Character Artist at Housemarque</li>
+            <li><a href="https://www.youtube.com/watch?v=x_AwackD6Ek" target="_blank" rel="noopener">Göksu Uğur</a>, AI Lead at Santa Monica Studio</li>
+            <li><a href="https://www.youtube.com/watch?v=YcPFzrX8JYk" target="_blank" rel="noopener">Emre Buğday</a>, Technical Game Designer at Wargaming</li>
+            <li><a href="https://www.youtube.com/watch?v=UCfuypTYutE" target="_blank" rel="noopener">Berke Boz</a>, Software Engineer at EA Sports</li>
+            <li><a href="https://www.youtube.com/watch?v=H97YoaRYI8U" target="_blank" rel="noopener">Dilara Özden</a>, Senior Illustrator at Ghost Story Games</li>
+            <li><a href="https://www.youtube.com/watch?v=asmsHy0G5bg" target="_blank" rel="noopener">Seyfettin Dinçtürk</a>, QA Tester at EA, Apple, 2K, PlayStation and BlackMill</li>
+          </ul>
+        </div>
+
+        <h4 class="entry__role entry__role--second">Sponsorship Coordinator</h4>
+        <p class="entry__meta">
+          <i class="fa-regular fa-calendar"></i> 06/2023 - 06/2024
+          <i class="fa-solid fa-location-dot"></i> Istanbul, Turkey
+        </p>
+
+        <div class="detail">
+          <h3 class="h3 label">My Responsibilities:</h3>
+          <ul>
+            <li>Coordinated sponsor negotiations for the university-wide <strong>YTU Digital Gaming Days</strong>.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ═══════════════ PROJECTS ═══════════════ -->
+      <h2 class="h2" id="projects">Projects</h2>
+
+      <!-- ─────────── LUDEN ENGINE ─────────── -->
+      <section class="entry">
+        <div class="entry__logo entry__logo--glyph"><i class="fa-solid fa-cubes"></i></div>
+        <h3 class="entry__company">Luden Engine</h3>
+        <h4 class="entry__role">2D Game Engine, built from scratch</h4>
+        <p class="entry__meta">
+          <i class="fa-regular fa-calendar"></i> 2024 - present
+          <i class="fa-solid fa-user"></i> Solo project
+        </p>
+
+        <div class="cols">
+          <div class="cols__left">
+            <div class="art">
+              <img src="images/LudenEngineZooGameSceneEditorTab.png" alt="Luden Engine editor" loading="lazy" onerror="this.parentNode.classList.add('shot--empty')">
+              <span class="shot__ph">images/LudenEngineZooGameSceneEditorTab.png</span>
+            </div>
+            <p class="platforms"><i class="fa-brands fa-windows"></i> <i class="fa-brands fa-github"></i></p>
+            <h4 class="proj__title">Luden Engine</h4>
+            <p class="proj__genre">General-purpose C++20 game engine</p>
+            <p>Released on <strong>Windows</strong>, open source on GitHub.</p>
+            <p>Developed using <strong>C++20</strong>, <strong>SFML</strong>, <strong>Box2D 3.0</strong> and <strong>Dear ImGui</strong>.</p>
+          </div>
+
+          <div class="cols__right">
+            <div class="info">
+              <div class="info__cell"><span class="info__label">Project</span><span class="info__value">Luden Engine</span></div>
+              <div class="info__cell"><span class="info__label">Mode</span><span class="info__value">Editor and runtime</span></div>
+              <div class="info__cell"><span class="info__label">Genre</span><span class="info__value">2D game engine</span></div>
+              <div class="info__cell"><span class="info__label">Language</span><span class="info__value">C++20</span></div>
+              <div class="info__cell"><span class="info__label">Platforms</span><span class="info__value">Windows</span></div>
+              <div class="info__cell"><span class="info__label">Status</span><span class="info__value">Ongoing, games shipped with it</span></div>
+            </div>
+
+            <h3 class="h3">Related Links</h3>
+            <a class="linkbtn" href="https://github.com/EsgiJ/Luden" target="_blank" rel="noopener">Source on GitHub</a>
+            <a class="linkbtn" href="https://globalgamejam.org/games/2026/deranged-penguin-8" target="_blank" rel="noopener">Global Game Jam Page</a>
+            <a class="linkbtn" href="https://itch.io/jam/bugzoneggj2026/rate/4249426" target="_blank" rel="noopener">itch.io Page</a>
+          </div>
+        </div>
+
+        <div class="detail">
+          <h3 class="h3 label">Project Description:</h3>
+          <p>
+            Luden is a general-purpose C++20 game engine built around a custom Entity-Component System and
+            data-oriented design. It has an ImGui-powered editor inspired by Unity and Unreal, Box2D 3.0
+            physics, and a hot-reload capable native scripting system.
+          </p>
+          <p>
+            When I started I had little C++ experience and no idea how engines actually worked: how to
+            design systems, manage memory efficiently, or build editor tools. Building Luden taught me all
+            of it, and it is where I put the low-level habits I picked up at IO Interactive into practice.
+          </p>
+
+          <h3 class="h3 label">Architecture:</h3>
+          <ul>
+            <li><strong>Engine.dll</strong> holds the ECS, physics, rendering and resource management. It depends on nothing else.</li>
+            <li><strong>Editor.exe</strong> is the ImGui editor: scene hierarchy, inspector, viewport and resource browser.</li>
+            <li><strong>GameModule.dll</strong> holds the game scripts, compiled separately and hot-reloadable.</li>
+          </ul>
+          <p>Dependencies flow one way, so the engine can be reused across projects.</p>
+
+          <h3 class="h3 label">What I Built:</h3>
+          <ul>
+            <li><strong>Entity-Component System</strong> hand-built from scratch, not a third-party library like EnTT, so that I would actually understand engine internals. Entities are lightweight IDs and components of one type live contiguously in memory, which keeps iteration cache-friendly across thousands of entities.</li>
+            <li><strong>Performance work</strong> on cache-friendly data layouts and manual memory management.</li>
+            <li><strong>Hot reload.</strong> When the game DLL changes, the editor destroys script instances, unloads the old DLL, loads the new one, then re-registers and recreates instances without restarting.</li>
+            <li><strong>Editor tabs.</strong> Scene (gizmos, play and edit toggle, physics debug draw), Sprite (atlas slicing), Animation (frame timeline), Prefab (nested templates that auto-update every instance).</li>
+            <li><strong>Physics</strong> through Box2D 3.0, with static, dynamic and kinematic bodies.</li>
+            <li><strong>Input</strong> as a context-based system with action abstraction, inspired by Unreal's Enhanced Input.</li>
+            <li><strong>Serialization</strong> in a JSON scene format, chosen to be version-control friendly.</li>
+          </ul>
+
+          <h3 class="h3 label">Shipped With Luden:</h3>
+          <p>
+            <strong>The Deranged Penguin</strong>, a game about a penguin manipulating its friends at the
+            zoo in pursuit of eternal peace, made at <strong>Global Game Jam 2026</strong>. Thanks to İclal
+            Baydur and Ataberk Akın, who used my buggy engine and shipped a game with it despite missing
+            features and unclear documentation.
+          </p>
+        </div>
+
+        <div class="videos">
+          <h3 class="h3">Game Video</h3>
+          <div class="videos__grid">
+            <div class="video"><iframe src="https://www.youtube.com/embed/VjflBeZwM3g" title="The Deranged Penguin" loading="lazy" allowfullscreen></iframe></div>
+          </div>
+        </div>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel__track">
+            <figure class="carousel__slide"><img src="gifs/SceneEditorTab.gif" alt="Scene Editor" loading="lazy"><figcaption>Scene Editor: gizmos, play and edit toggle, physics debug draw.</figcaption></figure>
+            <figure class="carousel__slide"><img src="gifs/AnimationEditorTab.gif" alt="Animation Editor" loading="lazy"><figcaption>Animation Editor: frame timeline with preview and loop settings.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/SpriteEditorTab.png" alt="Sprite Editor" loading="lazy"><figcaption>Sprite Editor: slicing sprites out of texture atlases.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/PrefabEditorTab.png" alt="Prefab Editor" loading="lazy"><figcaption>Prefab Editor: templates that auto-update every instance.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/LudenEngineArchitecture%20-%201.png" alt="Engine architecture" loading="lazy"><figcaption>Three-layer modular architecture.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/LudenEngineECSDetail.png" alt="ECS detail" loading="lazy"><figcaption>ECS component storage in detail.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/ECS_Simple_Layout..png" alt="ECS memory layout" loading="lazy"><figcaption>Contiguous component memory layout.</figcaption></figure>
+          </div>
+          <button class="carousel__nav carousel__nav--prev" type="button" aria-label="Previous">&lsaquo;</button>
+          <button class="carousel__nav carousel__nav--next" type="button" aria-label="Next">&rsaquo;</button>
+          <div class="carousel__dots" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <hr class="entry-rule">
+
+      <!-- ─────────── HTN VISUALIZER ─────────── -->
+      <section class="entry">
+        <div class="entry__logo entry__logo--glyph"><i class="fa-solid fa-diagram-project"></i></div>
+        <h3 class="entry__company">HTN Visualizer</h3>
+        <h4 class="entry__role">AI Debug Tool</h4>
+        <p class="entry__meta">
+          <i class="fa-regular fa-calendar"></i> 2026
+          <i class="fa-solid fa-user"></i> Solo project
+        </p>
+
+        <div class="cols">
+          <div class="cols__left">
+            <div class="art">
+              <img src="images/HTNVisualizerScreenshot.png" alt="HTN Visualizer" loading="lazy" onerror="this.parentNode.classList.add('shot--empty')">
+              <span class="shot__ph">images/HTNVisualizerScreenshot.png</span>
+            </div>
+            <p class="platforms"><i class="fa-brands fa-windows"></i> <i class="fa-brands fa-github"></i></p>
+            <h4 class="proj__title">HTN Visualizer</h4>
+            <p class="proj__genre">Developer tool for Hierarchical Task Network AI</p>
+            <p>Released on <strong>Windows</strong>, open source on GitHub.</p>
+            <p>Developed using <strong>C++</strong> and <strong>Dear ImGui</strong>.</p>
+          </div>
+
+          <div class="cols__right">
+            <div class="info">
+              <div class="info__cell"><span class="info__label">Project</span><span class="info__value">HTN Visualizer</span></div>
+              <div class="info__cell"><span class="info__label">Mode</span><span class="info__value">Developer tool</span></div>
+              <div class="info__cell"><span class="info__label">Genre</span><span class="info__value">AI debugging</span></div>
+              <div class="info__cell"><span class="info__label">Stack</span><span class="info__value">C++ / Dear ImGui</span></div>
+              <div class="info__cell"><span class="info__label">Platforms</span><span class="info__value">Windows</span></div>
+              <div class="info__cell"><span class="info__label">Status</span><span class="info__value">Open source</span></div>
+            </div>
+
+            <h3 class="h3">Related Links</h3>
+            <a class="linkbtn" href="https://github.com/EsgiJ/HTN_Visualizer" target="_blank" rel="noopener">Source on GitHub</a>
+          </div>
+        </div>
+
+        <div class="detail">
+          <h3 class="h3 label">Project Description:</h3>
+          <p>
+            A C++ and Dear ImGui tool for visualizing and debugging Hierarchical Task Network (HTN) AI
+            trees.
+          </p>
+          <p>
+            This is a personal, independent version of a tool concept I worked on during my AAA experience
+            at IO Interactive. It is built with its own architecture and contains
+            <strong>no proprietary code or assets</strong>.
+          </p>
+
+          <h3 class="h3 label">Features:</h3>
+          <ul>
+            <li><strong>Node hierarchy view</strong> with search and jump-to-source navigation, plus a live, draggable node graph of task decomposition.</li>
+            <li><strong>Real-time property inspector</strong> for tuning task parameters such as engagement range and thresholds.</li>
+            <li><strong>Mini map</strong> for fast navigation on larger trees.</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="entry-rule">
+
+      <!-- ─────────── COOP TPS ─────────── -->
+      <section class="entry">
+        <div class="entry__logo entry__logo--glyph"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3 class="entry__company">COOP TPS Base Defense</h3>
+        <h4 class="entry__role">Co-op Third-Person Shooter</h4>
+        <p class="entry__meta">
+          <i class="fa-regular fa-calendar"></i> 2024
+          <i class="fa-solid fa-user"></i> Solo project
+        </p>
+
+        <div class="cols">
+          <div class="cols__left">
+            <div class="art">
+              <img src="images/coop-tps-base-defense-ui.png" alt="COOP TPS Base Defense" loading="lazy" onerror="this.parentNode.classList.add('shot--empty')">
+              <span class="shot__ph">images/coop-tps-base-defense-ui.png</span>
+            </div>
+            <p class="platforms"><i class="fa-brands fa-windows"></i></p>
+            <h4 class="proj__title">COOP TPS Base Defense</h4>
+            <p class="proj__genre">Third-person shooter with tower and base-defense mechanics</p>
+            <p>Released on <strong>PC</strong> as a downloadable build.</p>
+            <p>Developed using <strong>Unreal Engine 5</strong> and <strong>C++</strong>.</p>
+          </div>
+
+          <div class="cols__right">
+            <div class="info">
+              <div class="info__cell"><span class="info__label">Project</span><span class="info__value">COOP TPS Base Defense</span></div>
+              <div class="info__cell"><span class="info__label">Mode</span><span class="info__value">Online co-op</span></div>
+              <div class="info__cell"><span class="info__label">Genre</span><span class="info__value">Third-person shooter</span></div>
+              <div class="info__cell"><span class="info__label">Engine</span><span class="info__value">Unreal Engine 5</span></div>
+              <div class="info__cell"><span class="info__label">Platforms</span><span class="info__value">PC</span></div>
+              <div class="info__cell"><span class="info__label">Status</span><span class="info__value">Playable build</span></div>
+            </div>
+
+            <h3 class="h3">Related Links</h3>
+            <a class="linkbtn" href="https://drive.google.com/drive/folders/1emNEYcP2R5cVQpkjDr1PoTGTmASsKj3q" target="_blank" rel="noopener">Download and Play</a>
+          </div>
+        </div>
+
+        <div class="detail">
+          <h3 class="h3 label">Project Description:</h3>
+          <p>
+            Inspired by Lethal Company. Players collaborate to defend the entry points of a base against
+            escalating waves of zombies, and communication and resource management decide whether they
+            survive. I built it to learn Unreal's networking model end to end.
+          </p>
+
+          <h3 class="h3 label">Technical Features:</h3>
+          <ul>
+            <li><strong>AI and animation:</strong> zombie AI built with behavior trees, combined with motion-matching animation.</li>
+            <li><strong>Networking:</strong> server-client architecture with state replication and synchronization.</li>
+            <li><strong>Engine features:</strong> procedural generation for the forest environment, plus MetaHuman and Nanite integration.</li>
+            <li>Four weapons (pistol, shotgun, rifle, grenade launcher) with distinct ammo counts, damage values, area effects and spread rates.</li>
+          </ul>
+        </div>
+
+        <div class="videos">
+          <h3 class="h3">Game Video</h3>
+          <div class="videos__grid">
+            <div class="video"><iframe src="https://www.youtube.com/embed/ILB9HL2DBCo" title="Gameplay" loading="lazy" allowfullscreen></iframe></div>
+            <div class="video"><iframe src="https://www.youtube.com/embed/VC_wIUp0FZc" title="Motion matching" loading="lazy" allowfullscreen></iframe></div>
+            <div class="video"><iframe src="https://www.youtube.com/embed/46nUFlybWjM" title="Weapons" loading="lazy" allowfullscreen></iframe></div>
+          </div>
+        </div>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel__track">
+            <figure class="carousel__slide"><img src="images/client-server-2.png" alt="Client server architecture" loading="lazy"><figcaption>Server-client replication setup.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/coop-tps-base-defense-behavior-tree.png" alt="Behavior tree" loading="lazy"><figcaption>Zombie behavior tree.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/coop-tps-base-defense-chooser-table.png" alt="Chooser table" loading="lazy"><figcaption>Motion matching chooser table.</figcaption></figure>
+            <figure class="carousel__slide"><img src="images/coop-tps-base-defense-pcg.png" alt="PCG graph" loading="lazy"><figcaption>Procedural forest generation graph.</figcaption></figure>
+          </div>
+          <button class="carousel__nav carousel__nav--prev" type="button" aria-label="Previous">&lsaquo;</button>
+          <button class="carousel__nav carousel__nav--next" type="button" aria-label="Next">&rsaquo;</button>
+          <div class="carousel__dots" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <hr class="entry-rule">
+
+      <!-- ─────────── RAY TRACER ─────────── -->
+      <section class="entry">
+        <div class="entry__logo entry__logo--glyph"><i class="fa-solid fa-lightbulb"></i></div>
+        <h3 class="entry__company">Ray Tracer</h3>
+        <h4 class="entry__role">CPU Renderer in C++</h4>
+        <p class="entry__meta">
+          <i class="fa-regular fa-calendar"></i> Ongoing
+          <i class="fa-solid fa-user"></i> Solo project
+        </p>
+
+        <div class="cols">
+          <div class="cols__left">
+            <div class="art">
+              <img src="images/RayTracerScreenshot.jpg" alt="Ray tracer render" loading="lazy" onerror="this.parentNode.classList.add('shot--empty')">
+              <span class="shot__ph">images/RayTracerScreenshot.jpg</span>
+            </div>
+            <p class="platforms"><i class="fa-brands fa-windows"></i> <i class="fa-brands fa-github"></i></p>
+            <h4 class="proj__title">Ray Tracer</h4>
+            <p class="proj__genre">Offline CPU renderer</p>
+            <p>Developed using <strong>C++</strong>, written from scratch.</p>
+          </div>
+
+          <div class="cols__right">
+            <div class="info">
+              <div class="info__cell"><span class="info__label">Project</span><span class="info__value">Ray Tracer</span></div>
+              <div class="info__cell"><span class="info__label">Mode</span><span class="info__value">Offline renderer</span></div>
+              <div class="info__cell"><span class="info__label">Genre</span><span class="info__value">Rendering</span></div>
+              <div class="info__cell"><span class="info__label">Language</span><span class="info__value">C++</span></div>
+              <div class="info__cell"><span class="info__label">Platforms</span><span class="info__value">Windows</span></div>
+              <div class="info__cell"><span class="info__label">Status</span><span class="info__value">In progress</span></div>
+            </div>
+
+            <h3 class="h3">Related Links</h3>
+            <a class="linkbtn" href="https://github.com/EsgiJ/RayTracing" target="_blank" rel="noopener">Source on GitHub</a>
+          </div>
+        </div>
+
+        <div class="detail">
+          <h3 class="h3 label">Project Description:</h3>
+          <p>
+            A CPU ray tracer written in C++, following the <em>Ray Tracing in One Weekend</em> series. The
+            first book is complete.
+          </p>
+
+          <h3 class="h3 label">Planned Features:</h3>
+          <ul>
+            <li>Texture mapping</li>
+            <li>Volumes such as fog and smoke</li>
+            <li>Motion blur</li>
+            <li>Lights</li>
+          </ul>
+        </div>
+
+        <div class="videos">
+          <h3 class="h3">Demo Video</h3>
+          <div class="videos__grid">
+            <div class="video"><iframe src="https://www.youtube.com/embed/J4uvtS17kBY" title="Ray tracer demo" loading="lazy" allowfullscreen></iframe></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════ EDUCATION ═══════════════ -->
+      <h2 class="h2" id="education">Education</h2>
+      <div class="detail">
+        <ul>
+          <li><strong>Bachelor in Computer Engineering</strong>, Yıldız Technical University. 10/2022 to 06/2026, Istanbul, Turkey.</li>
+          <li><strong>Bachelor in Computer Engineering (Erasmus)</strong>, Czech Technical University in Prague. 02/2024 to 06/2024, Prague, Czechia.</li>
+        </ul>
+        <h3 class="h3 label">Languages:</h3>
+        <ul>
+          <li><strong>Turkish</strong>, native</li>
+          <li><strong>English</strong>, fluent</li>
+        </ul>
+      </div>
+
+      <!-- ═══════════════ CONTACT ═══════════════ -->
+      <h2 class="h2" id="contact">Contact</h2>
+      <p>
+        I am open to full-time roles, on site or remote, and happy to walk anyone through the Luden
+        codebase.
+      </p>
+      <p class="contact__row">
+        <a class="pill" href="mailto:oguzhanesgiyusufo@gmail.com">oguzhanesgiyusufo@gmail.com</a>
+        <a class="pill" href="documents/oguzhanesgiyusuforesume.pdf" download>Download Resume</a>
+        <a class="pill" href="https://www.linkedin.com/in/oguzhan-esgiyusufo/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="pill" href="https://github.com/EsgiJ" target="_blank" rel="noopener">GitHub</a>
+      </p>
+
+    </main>
+  </div>
+</div>
+
+<footer class="footer">© <span id="year">2026</span> Oğuzhan Esgiyusufo</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

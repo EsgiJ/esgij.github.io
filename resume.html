@@ -1,50 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Oğuzhan Esgiyusufoglu</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume - Oğuzhan Esgiyusufo</title>
+<meta name="description" content="Resume. Systems-oriented game programmer, previously Software Engineer Intern at IO Interactive.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Page Header -->
-        <header class="page-header">
-            <a href="index.html" class="back-link">← Back</a>
-            <h1 class="page-title">Resume</h1>
-            <p class="page-subtitle">Programmer / C++</p>
-        </header>
 
-        <!-- Resume Content -->
-        <section>
-            <p class="content-text">
-                View or download my resume below.
-            </p>
-            
-            <!-- PDF Embed -->
-            <iframe 
-                class="resume-embed" 
-                src="documents/oguzhanesgiyusuforesume.pdf"
-                title="Resume">
-            </iframe>
+<a class="skip" href="#main">Skip to content</a>
 
-            <!-- Download Button -->
-            <a href="documents/oguzhanesgiyusuforesume.pdf" 
-               class="download-btn" 
-               download>
-                Download Resume (PDF)
-            </a>
-        </section>
+<nav class="navbar" id="navbar">
+  <div class="navbar__brand">
+    <a class="navbar__name" href="index.html">Oğuzhan Esgiyusufo</a>
+    <button class="navbar__burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="navbar__menu" id="navmenu">
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="3dart.html">3D Art</a>
+    <a href="resume.html">Resume</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</nav>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="social-links">
-                <a href="https://github.com/EsgiJ">GitHub</a>
-                <a href="https://www.artstation.com/oguzhan_esgiyusufo">ArtStation</a>
-                <a href="https://www.instagram.com/esgijj/">Instagram</a>
-            </div>
-        </footer>
-    </div>
+<div class="section">
+  <div class="container columns">
+
+    <aside class="col-side">
+      <div class="side">
+        <div class="side__photo">
+          <img src="images/img_20240623_212534.jpg" alt="Oğuzhan Esgiyusufo" onerror="this.parentNode.classList.add('shot--empty')">
+          <span class="shot__ph">images/img_20240623_212534.jpg</span>
+        </div>
+
+        <h1 class="side__name"><a href="index.html">Oğuzhan Esgiyusufo</a></h1>
+        <p class="side__role">Programmer</p>
+
+        <ul class="side__contact">
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:oguzhanesgiyusufo@gmail.com">oguzhanesgiyusufo@gmail.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Istanbul, Turkey</li>
+        </ul>
+
+        <ul class="side__bullets">
+          <li>AAA experience at <strong>IO Interactive</strong> on <strong>007: First Light</strong> and <strong>Project Fantasy</strong>.</li>
+          <li>Building <strong>Luden Engine</strong>, a C++20 engine with a custom <strong>ECS</strong>, from scratch.</li>
+          <li>Finishing <strong>Computer Engineering</strong> at Yıldız Technical University.</li>
+        </ul>
+
+        <hr class="side__rule">
+
+        <div class="side__buttons">
+          <a class="pill" href="index.html#experience">Experience</a>
+          <a class="pill" href="index.html#projects">Projects</a>
+          <a class="pill" href="3dart.html">3D Art</a>
+          <a class="pill" href="resume.html">Resume</a>
+        </div>
+
+        <hr class="side__rule">
+
+        <div class="side__social">
+          <a href="https://www.linkedin.com/in/oguzhan-esgiyusufo/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/EsgiJ" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.artstation.com/oguzhan_esgiyusufo" target="_blank" rel="noopener" aria-label="ArtStation"><i class="fa-brands fa-artstation"></i></a>
+          <a href="mailto:oguzhanesgiyusufo@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="col-main" id="main">
+      <h2 class="h2">Resume</h2>
+      <p>Read it below or download the PDF.</p>
+
+      <p class="contact__row">
+        <a class="pill" href="documents/oguzhanesgiyusuforesume.pdf" download>Download PDF</a>
+        <a class="pill" href="mailto:oguzhanesgiyusufo@gmail.com">Email me</a>
+      </p>
+
+      <iframe class="resume-embed" src="documents/oguzhanesgiyusuforesume.pdf" title="Resume, Oğuzhan Esgiyusufo"></iframe>
+      <p class="resume-note">If the preview does not load on your device, use the download button above.</p>
+    </main>
+
+  </div>
+</div>
+
+<footer class="footer">© <span id="year">2026</span> Oğuzhan Esgiyusufo</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
